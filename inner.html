@@ -1,12 +1,229 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
+<html lang="ru"><head>
+  <meta charset="utf-8">
+  <title>Сливочное мороженое магазина «Gllacy Shop»</title>
+</head>
+<body>
+<header class="main-header">
+  <nav class="main-navigation">
+    <a class="main-header-logo">
+      <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип магазина мороженого «Gllacy Shop»">
+    </a>
+    <ul class="navigation-site">
+      <li class="navigation-current"><a class="navigation-sub-menu" href="#">Каталог</a>
+        <ul class="sub-menu">
+          <li class="sub-menu-item">Новинки
+            <ul class="sub-sub-menu">
+              <li class="sub-sub-menu-item"><a href="#" class="navigation-menu-link">Сливочное</a></li>
+              <li class="sub-sub-menu-item"><a href="#" class="navigation-menu-link">Щербеты</a></li>
+              <li class="sub-sub-menu-item"><a href="#" class="navigation-menu-link">Фруктовый лед</a></li>
+              <li class="sub-sub-menu-item"><a href="#" class="navigation-menu-link">Мелорин</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">Доставка и оплата</a></li>
+      <li><a href="#">О компании</a></li>
+    </ul>
+    <div class="main-searching">
+      <span class="button-head searching-button"></span>
+    </div>
+    <ul class="navigation-user">
+      <li class="button-head login-button">Вход</li>
+      <li class="button-head cart-button">Корзина</li>
+    </ul>
+  </nav>
+  <section class="modal modal-cart">
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+  </section>
 
-  </body>
+  <div class="schedule-phone">
+    <p class="schedule">с 10 до 20, ежедневно</p>
+    <p class="phone">8 812 450-25-25</p>
+  </div>
+</header>
+
+<main class="container">
+
+  <nav class="page-navigation">
+    <ul class="page-navigation-дшые">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="#">Каталог</a></li>
+      <li><a class="page-navigation-current">Сливочное</a></li>
+    </ul>
+  </nav>
+  <h1 class="page-title">Сливочное мороженое</h1>
+
+  <section class="filter">
+    <h2 class="visually-hidden">Фильтр товаров</h2>
+    <form>
+      <!-- здесь формы баттоны и прочее -->
+    </form>
+  </section>
+
+  <section class="catalog-items">
+    <h2 class="visually-hidden">Выборка товаров</h2>
+    <ul class="items-list">
+      <li class="item">
+        <p class="catalog-item-image">
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+        </p>
+        <p class="catalog-price">
+          <span class="catalog-price-amount">310 ₽</span>
+          <span class="catalog-price-units">/кг</span>
+        </p>
+        <p class="catalog-item-description"><a href="#" class="hit-description-link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
+      </li>
+      <li class="item">
+        <p class="catalog-item-image">
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочно-кофейное с кусочками шоколада">
+        </p>
+        <p class="catalog-price">
+          <span class="catalog-price-amount">380 ₽</span>
+          <span class="catalog-price-units">/кг</span>
+        </p>
+        <p class="catalog-item-description"><a href="#" class="hit-description-link">Сливочно-кофейное с кусочками шоколада</a></p>
+      </li>
+      <li class="item">
+        <p class="catalog-item-image">
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+        </p>
+        <p class="catalog-price">
+          <span class="catalog-price-amount">355 ₽</span>
+          <span class="catalog-price-units">/кг</span>
+        </p>
+        <p class="catalog-item-description"><a href="#" class="hit-description-link">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
+      </li>
+      <li class="item">
+        <p class="catalog-item-image">
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочное крем-брюле с карамельной подливкой">
+        </p>
+        <p class="catalog-price">
+          <span class="catalog-price-amount">415 ₽</span>
+          <span class="catalog-price-units">/кг</span>
+        </p>
+        <p class="catalog-item-description"><a href="#" class="hit-description-link">Сливочное крем-брюле с карамельной подливкой</a></p>
+      </li>
+      <li class="item">
+        <p class="catalog-item-image">
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочное с брусничным джемом">
+        </p>
+        <p class="catalog-price">
+          <span class="catalog-price-amount">325 ₽</span>
+          <span class="catalog-price-units">/кг</span>
+        </p>
+        <p class="catalog-item-description"><a href="#" class="hit-description-link">Сливочное с брусничным джемом</a></p>
+      </li>
+      <li class="item">
+        <p class="catalog-item-image">
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочно-черничное с цельными ягодами черники">
+        </p>
+        <p class="catalog-price">
+          <span class="catalog-price-amount">410 ₽</span>
+          <span class="catalog-price-units">/кг</span>
+        </p>
+        <p class="catalog-item-description"><a href="#" class="hit-description-link">Сливочно-черничное с цельными ягодами черники</a></p>
+      </li>
+      <li class="item">
+        <p class="catalog-item-image">
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочно-лимонное с карамельной присыпкой">
+        </p>
+        <p class="catalog-price">
+          <span class="catalog-price-amount">375 ₽</span>
+          <span class="catalog-price-units">/кг</span>
+        </p>
+        <p class="catalog-item-description"><a href="#" class="hit-description-link">Сливочно-лимонное с карамельной присыпкой</a></p>
+      </li>
+      <li class="item">
+        <p class="catalog-item-image">
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочное с шоколадной стружкой">
+        </p>
+        <p class="catalog-price">
+          <span class="catalog-price-amount">320 ₽</span>
+          <span class="catalog-price-units">/кг</span>
+        </p>
+        <p class="catalog-item-description"><a href="#" class="hit-description-link">Сливочное с шоколадной стружкой</a></p>
+      </li>
+      <li class="item">
+        <p class="catalog-item-image">
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочно-ванильное с кусочками шоколада">
+        </p>
+        <p class="catalog-price">
+          <span class="catalog-price-amount">440 ₽</span>
+          <span class="catalog-price-units">/кг</span>
+        </p>
+        <p class="catalog-item-description"><a href="#" class="hit-description-link">Сливочно-ванильное с кусочками шоколада</a></p>
+      </li>
+      <li class="item">
+        <p class="catalog-item-image">
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочноe с ментоловым сиропом">
+        </p>
+        <p class="catalog-price">
+          <span class="catalog-price-amount">435 ₽</span>
+          <span class="catalog-price-units">/кг</span>
+        </p>
+        <p class="catalog-item-description"><a href="#" class="hit-description-link">Сливочноe с ментоловым сиропом</a></p>
+      </li>
+      <li class="item">
+        <p class="catalog-item-image">
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочное с кусочками черного шоколада">
+        </p>
+        <p class="catalog-price">
+          <span class="catalog-price-amount">355 ₽</span>
+          <span class="catalog-price-units">/кг</span>
+        </p>
+        <p class="catalog-item-description"><a href="#" class="hit-description-link">Сливочное с кусочками черного шоколада</a></p>
+      </li>
+      <li class="item">
+        <p class="catalog-item-image">
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Сливочное с мятным сиропом">
+        </p>
+        <p class="catalog-price">
+          <span class="catalog-price-amount">420 ₽</span>
+          <span class="catalog-price-units">/кг</span>
+        </p>
+        <p class="catalog-item-description"><a href="#" class="hit-description-link">Сливочное с мятным сиропом</a></p>
+      </li>
+    </ul>
+    <ul class="pagination-list">
+      <li class="pagination-item disabled"><a href="#">Назад</a></li>
+      <li class="pagination-item pagination-item-current"><a>1</a></li>
+      <li class="pagination-item"><a href="#">2</a></li>
+      <li class="pagination-item"><a href="#">3</a></li>
+      <li class="pagination-item"><a href="#">4</a></li>
+      <li class="pagination-item"><a href="#">5</a></li>
+      <li class="pagination-item"><a href="#">Вперед</a></li>
+    </ul>
+  </section>
+
+
+</main>
+
+<footer class="main-footer">
+
+  <ul class="footer-social">
+    <li><a class="social-button" href="">Твиттер</a></li>
+    <li><a class="social-button" href="">Инстаграмм</a></li>
+    <li><a class="social-button" href="">Фейсбук</a></li>
+    <li><a class="social-button" href="">Вконтакте</a></li>
+  </ul>
+
+  <section class="footer-info">
+    <dl class="footer-info-list">
+      <dt class="footer-info-providers">Для поставщиков</dt>
+      <dd><a href="#" class="footer-info-link">О производстве</a></dd>
+    </dl>
+    <dl class="footer-info-list">
+      <dt class="footer-info-documents">Наши документы</dt>
+      <dd><a href="#" class="footer-info-link">Экологические стандарты</a></dd>
+    </dl>
+  </section>
+
+  <div class="footer-copyright">
+    <img class="footer-logo" src="http://placehold.it/150x100" width="150" height="100" alt="Лого для футера магазина мороженого «Gllacy Shop»">
+    <p class="copyright">Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017</p>
+  </div>
+</footer>
+
+</body>
 </html>
