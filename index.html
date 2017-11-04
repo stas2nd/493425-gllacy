@@ -1,12 +1,213 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
+<html lang="ru"><head>
+  <meta charset="utf-8">
+  <title>Магазин мороженого «Gllacy Shop»</title>
+</head>
+<body>
+<header class="main-header">
+  <nav class="main-navigation">
+    <a class="main-header-logo">
+      <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип магазина мороженого «Gllacy Shop»">
+    </a>
+    <ul class="navigation-site">
+      <li><a class="navigation-sub-menu" href="#">Каталог</a>
+        <ul class="sub-menu">
+          <li class="sub-menu-item">Новинки
+            <ul class="sub-sub-menu">
+              <li class="sub-sub-menu-item"><a href="#" class="navigation-menu-link">Сливочное</a></li>
+              <li class="sub-sub-menu-item"><a href="#" class="navigation-menu-link">Щербеты</a></li>
+              <li class="sub-sub-menu-item"><a href="#" class="navigation-menu-link">Фруктовый лед</a></li>
+              <li class="sub-sub-menu-item"><a href="#" class="navigation-menu-link">Мелорин</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">Доставка и оплата</a></li>
+      <li><a href="#">О компании</a></li>
+    </ul>
+    <div class="main-searching">
+      <span class="button-head"></span>
+    </div>
+    <ul class="navigation-user">
+      <li class="button-head login-link">Вход</li>
+      <li class="button-head cart">Корзина</li>
+    </ul>
+  </nav>
+  <div class="schedule-phone">
+    <p class="schedule">с 10 до 20, ежедневно</p>
+    <p class="phone">8 812 450-25-25</p>
+  </div>
+</header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+<main class="container">
+  <h1 class="visible-hidden">Магазин мороженого «Gllacy Shop»</h1>
 
+  <section class="main-promo">
+    <p>
+      <a href="#">
+        <img class="main-promo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Крем-брюле и пломбир с малиновым джемом">
+      </a>
+    </p>
+    <p class="promo-text">Крем-брюле и пломбир с малиновым джемом</p>
+    <a href="#" class="button button-promo">Давайте оба!</a>
+  </section>
+
+  <section class="banners-area">
+    <h2 class="visible-hidden">Спецпредложения</h2>
+    <form class="banners-switch">
+      <!--форма с радио-баттонс для переключателя слайдера-->
+    </form>
+    <ul class="banners">
+      <li class="banner">
+        <h3 class="banner-title">Малинка даром!</h3>
+        <p class="banner-description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малиновго варенья бесплатно.</p>
+        <a class="button banner-button">Хочу варенье!</a>
+      </li>
+      <li class="banner">
+        <h3 class="banner-title">Шоколадки даром!</h3>
+        <p class="banner-description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+        <a class="button banner-button">Хочу шоколадки!</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="hits-area">
+    <ul class="hits">
+      <li class="hit-item">
+        <span class="hit-logo">хит</span>
+        <p class="hit-price">
+          <span class="hit-price-amount">310 ₽</span>
+          <span class="hit-price-units">/кг</span>
+        </p>
+        <p class="hit-description"><a href="#" class="hit-description-link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
+      </li>
+      <li class="hit-item">
+        <span class="hit-logo">хит</span>
+        <p class="hit-price">
+          <span class="hit-price-amount">380 ₽</span>
+          <span class="hit-price-units">/кг</span>
+        </p>
+        <p class="hit-description"><a href="#" class="hit-description-link">Сливочно-кофейное с кусочками шоколада</a></p>
+      </li>
+      <li class="hit-item">
+        <span class="hit-logo">хит</span>
+        <p class="hit-price">
+          <span class="hit-price-amount">355 ₽</span>
+          <span class="hit-price-units">/кг</span>
+        </p>
+        <p class="hit-description"><a href="#" class="hit-description-link">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
+      </li>
+      <li class="hit-item">
+        <span class="hit-logo">хит</span>
+        <p class="hit-price">
+          <span class="hit-price-amount">415 ₽</span>
+          <span class="hit-price-units">/кг</span>
+        </p>
+        <p class="hit-description"><a href="#" class="hit-description-link">Сливочное крем-брюле с карамельной подливкой</a></p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="features">
+    <b class="features-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
+    <ul class="features-list">
+      <li class="feature-item feature-self-production">
+        <p class="feature-self-production-text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+      </li>
+      <li class="feature-item feature-reliable-friends">
+        <p class="feature-reliable-friends-text">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+      </li>
+      <li class="feature-item feature-natural-materials">
+        <p class="feature-natural-materials-text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+      </li>
+      <li class="feature-item feature-shipment">
+        <p class="feature-shipment-text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+      </li>
+    </ul>
+  </section>
+
+  <article class="blog-news">
+    <p class="blog-notice">Новое в нашем блоге</p>
+    <h4 class="blog-title"><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h4>
+  </article>
+
+  <section class="subscribe">
+    <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+    <form class="subscribe-form">
+      <!-- форма для ввода адреса -->
+      <input class="button-subscribe" type="submit" value="Отправить">
+    </form>
+  </section>
+
+  <section class="address-area">
+    <img class="address-map" src="http://placehold.it/150x100" width="150" height="100" alt="Карта для нахождения магазина мороженого «Gllacy Shop»">
+    <img class="address-pin" src="http://placehold.it/150x100" width="150" height="100" alt="Булавка для карты">
+    <div class="feedback">
+      <p class="feedback-address">
+        <span class="feedback-title">Адрес главного офиса и офлайн-магазина:</span>
+        <span  class="feedback-info">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+      </p>
+      <p class="feedback-phone">
+        <span class="feedback-title">Для заказов по телефону:</span>
+        <span  class="feedback-info">8 812 450-25-25</span>
+        <span class="feedback-tip">(с 10 до 20 ежедневно)</span>
+      </p>
+      <button class="button feedback-button">Форма обратной связи</button>
+    </div>
+  </section>
+</main>
+
+<footer class="main-footer">
+
+  <ul class="footer-social">
+      <li><a class="social-button" href="">Твиттер</a></li>
+      <li><a class="social-button" href="">Инстаграмм</a></li>
+      <li><a class="social-button" href="">Фейсбук</a></li>
+      <li><a class="social-button" href="">Вконтакте</a></li>
+  </ul>
+
+  <section class="footer-info">
+    <dl class="footer-info-list">
+      <dt class="footer-info-providers">Для поставщиков</dt>
+      <dd><a href="#" class="footer-info-link">О производстве</a></dd>
+    </dl>
+    <dl class="footer-info-list">
+      <dt class="footer-info-documents">Наши документы</dt>
+      <dd><a href="#" class="footer-info-link">Экологические стандарты</a></dd>
+    </dl>
+  </section>
+
+  <div class="footer-copyright">
+    <img class="footer-logo" src="http://placehold.it/150x100" width="150" height="100" alt="Лого для футера магазина мороженого «Gllacy Shop»">
+    <p class="copyright">Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017</p>
+  </div>
+</footer>
+
+<section class="modal modal-login">
+  <h3 class="visually-hidden">Личный кабинет</h3>
+  <form class="login-form">
+     <!-- поле ввода и поле пароля -->
+    <input class="button" type="submit" value="Войти">
+    <p class="login-tip">
+      <a href="#" class="login-link">Забыли пароль?</a>
+      <a  href="#" class="login-link">Новая регистрация</a>
+    </p>
+  </form>
+</section>
+
+<section class="modal modal-searching">
+  <form class="modal-searchig-form">
+    <!-- форма текстовая для поиска-->
+  </form>
+</section>
+
+<section class="modal modal-feedback">
+  <form class="modal-feedback-form">
+      <b class="modal-feedback-greeting">Мы обязательно вам ответим!</b>
+    <!-- 3 текстовых поля -->
+      <input type="submit" class="button" value="Отправить">
+  </form>
+  <span class="modal-close">x</span>
+</section>
   </body>
 </html>
