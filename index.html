@@ -6,9 +6,7 @@
 <body>
 <header class="main-header">
   <nav class="main-navigation">
-    <a class="main-header-logo">
-      <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип магазина мороженого «Gllacy Shop»">
-    </a>
+    <img class="main-header-logo" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип магазина мороженого «Gllacy Shop»">
     <ul class="navigation-site">
       <li><a class="navigation-sub-menu" href="#">Каталог</a>
         <ul class="sub-menu">
@@ -40,23 +38,40 @@
 </header>
 
 <main class="container">
-  <h1 class="visible-hidden">Магазин мороженого «Gllacy Shop»</h1>
+  <h1 class="visually-hidden">Магазин мороженого «Gllacy Shop»</h1>
 
-  <section class="main-promo">
-    <p>
-      <a href="#">
-        <img class="main-promo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Крем-брюле и пломбир с малиновым джемом">
-      </a>
-    </p>
-    <p class="promo-text">Крем-брюле и пломбир с малиновым джемом</p>
-    <a href="#" class="button button-promo">Давайте оба!</a>
+  <section class="promo-slider">
+    <div class="slider-item">
+      <p class="slider-item-images">
+        <img class="promo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Крем-брюле">
+        <img class="promo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Пломбир с малиновым джемом">
+      </p>
+      <p class="slider-item-text">Крем-брюле и пломбир с малиновым джемом</p>
+      <a href="#" class="button button-promo">Давайте оба!</a>
+    </div>
+    <div class="slider-item">
+      <p class="slider-item-images">
+        <img class="promo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Шоколадный пломбир">
+        <img class="promo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Лимонный сорбет">
+      </p>
+      <p class="slider-item-text">Шоколадный пломбир и лимонный сорбет</p>
+      <a href="#" class="button button-promo">Давайте оба!</a>
+    </div>
+    <div class="slider-item">
+      <p class="slider-item-images">
+        <img class="promo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Пломбир с помадкой">
+        <img class="promo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Клубничный щербет">
+      </p>
+      <p class="slider-item-text">Пломбир с помадкой и клубничный щербет</p>
+      <a href="#" class="button button-promo">Давайте оба!</a>
+    </div>
+    <form class="promo-switch">
+      <!--форма с радио-баттонс для переключателя слайдера-->
+    </form>
   </section>
 
   <section class="banners-area">
-    <h2 class="visible-hidden">Спецпредложения</h2>
-    <form class="banners-switch">
-      <!--форма с радио-баттонс для переключателя слайдера-->
-    </form>
+    <h2 class="visually-hidden">Спецпредложения</h2>
     <ul class="banners">
       <li class="banner">
         <h3 class="banner-title">Малинка даром!</h3>
@@ -83,6 +98,7 @@
           <span class="hit-price-units">/кг</span>
         </p>
         <p class="hit-description"><a href="#" class="hit-description-link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
+        <p class="hit-item-quick"><a href="#" class="button">Быстрый просмотр</a></p>
       </li>
       <li class="hit-item">
         <p class="hit-item-image">
@@ -94,6 +110,7 @@
           <span class="hit-price-units">/кг</span>
         </p>
         <p class="hit-description"><a href="#" class="hit-description-link">Сливочно-кофейное с кусочками шоколада</a></p>
+        <p class="hit-item-quick"><a href="#" class="button">Быстрый просмотр</a></p>
       </li>
       <li class="hit-item">
         <p class="hit-item-image">
@@ -105,6 +122,7 @@
           <span class="hit-price-units">/кг</span>
         </p>
         <p class="hit-description"><a href="#" class="hit-description-link">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
+        <p class="hit-item-quick"><a href="#" class="button">Быстрый просмотр</a></p>
       </li>
       <li class="hit-item">
         <p class="hit-item-image">
@@ -116,6 +134,7 @@
           <span class="hit-price-units">/кг</span>
         </p>
         <p class="hit-description"><a href="#" class="hit-description-link">Сливочное крем-брюле с карамельной подливкой</a></p>
+        <p class="hit-item-quick"><a href="#" class="button">Быстрый просмотр</a></p>
       </li>
     </ul>
   </section>
@@ -190,8 +209,8 @@
   </section>
 
   <div class="footer-copyright">
-    <img class="footer-logo" src="http://placehold.it/150x100" width="150" height="100" alt="Лого для футера магазина мороженого «Gllacy Shop»">
-    <p class="copyright">Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017</p>
+    <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="footer-logo" src="http://placehold.it/150x100" width="150" height="100" alt="Лого для футера магазина мороженого «Gllacy Shop»"></a>
+    <p class="copyright">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
   </div>
 </footer>
 
