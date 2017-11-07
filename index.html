@@ -6,7 +6,7 @@
 <body>
 <header class="main-header">
   <nav class="main-navigation">
-    <img class="main-header-logo" src="img/Logo.svg" width="154" height="64" alt="Логотип магазина мороженого «Gllacy Shop»">
+    <img class="main-header-logo" src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого «Gllacy Shop»">
     <ul class="navigation-site">
       <li><a class="navigation-sub-menu" href="#">Каталог</a>
         <ul class="sub-menu">
@@ -24,11 +24,11 @@
       <li><a href="#">О компании</a></li>
     </ul>
     <div class="main-searching">
-      <span class="button-head searching-button"></span>
+      <button>class="button-head searching-button"></button> 
     </div>
     <ul class="navigation-user">
-      <li class="button-head login-button">Вход</li>
-      <li class="button-head cart-button">Корзина</li>
+      <li><button class="button-head login-button">Вход</button></li>
+      <li><button class="button-head cart-button">Корзина</button></li>
     </ul>
   </nav>
   <div class="schedule-phone">
@@ -41,30 +41,37 @@
   <h1 class="visually-hidden">Магазин мороженого «Gllacy Shop»</h1>
 
   <section class="promo-slider">
+   <div class="slider-images"> 
     <div class="slider-item">
       <p class="slider-item-images">
-        <img class="promo-image" src="img/index/Крем-брюле и пломбир с малиновым джемом.png" width="1079" height="854" alt="Крем-брюле и пломбир с малиновым джемом">
+        <img class="promo-image" src="img/index/creme-brulee-and-cream-raspberry.png" width="1079" height="854" alt="Крем-брюле и пломбир с малиновым джемом">
       </p>
       <p class="slider-item-text">Крем-брюле и пломбир с малиновым джемом</p>
       <a href="#" class="button button-promo">Давайте оба!</a>
     </div>
     <div class="slider-item">
       <p class="slider-item-images">
-        <img class="promo-image" src="img/index/Шоколадный пломбир и лимонный сорбет.png" width="1065" height="859" alt="Шоколадный пломбир и лимонный сорбет">
+        <img class="promo-image" src="img/index/chocolate-creme-and-lemon-ice.png" width="1065" height="859" alt="Шоколадный пломбир и лимонный сорбет">
       </p>
       <p class="slider-item-text">Шоколадный пломбир и лимонный сорбет</p>
       <a href="#" class="button button-promo">Давайте оба!</a>
     </div>
     <div class="slider-item">
       <p class="slider-item-images">
-        <img class="promo-image" src="img/index/Пломбир с помадкой и клубничный щербет.png" width="1079" height="854" alt="Пломбир с помадкой и клубничный щербет">
+        <img class="promo-image" src="img/index/creme-sauce-and-strawberry-ice.png" width="1079" height="854" alt="Пломбир с помадкой и клубничный щербет">
       </p>
       <p class="slider-item-text">Пломбир с помадкой и клубничный щербет</p>
       <a href="#" class="button button-promo">Давайте оба!</a>
     </div>
-    <form class="promo-switch">
-      <!--форма с радио-баттонс для переключателя слайдера-->
-    </form>
+   </div> 
+            <input type="radio" id="btn-1" name="toggle" checked>
+            <input type="radio" id="btn-2" name="toggle">
+            <input type="radio" id="btn-3" name="toggle">
+      <div class="promo-switch">
+              <label for="btn-1"></label>
+              <label for="btn-2"></label>
+              <label for="btn-3"></label>
+      </div>
   </section>
 
   <section class="banners-area">
@@ -133,7 +140,7 @@
   </section>
 
   <section class="features">
-    <b class="features-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
+    <h1 class="features-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
     <ul class="features-list">
       <li class="feature-item feature-self-production">
         <p class="feature-self-production-text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
@@ -164,15 +171,15 @@
   </section>
 
   <section class="address-area">
-    <img class="address-map" src="img/index/Карта.png" width="1200" height="640" alt="Карта для нахождения магазина мороженого «Gllacy Shop»">
+    <img class="address-map" src="img/index/map.png" width="1200" height="640" alt="Карта для нахождения магазина мороженого «Gllacy Shop»">
     <div class="feedback">
-      <p class="feedback-address">
+      <address class="feedback-address">
         <span class="feedback-title">Адрес главного офиса и офлайн-магазина:</span>
         <span  class="feedback-info">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
-      </p>
+      </address>
       <p class="feedback-phone">
         <span class="feedback-title">Для заказов по телефону:</span>
-        <span  class="feedback-info">8 812 450-25-25</span>
+        <a href="tel:88124502525" class="feedback-info">8 812 450-25-25</a>
         <span class="feedback-tip">(с 10 до 20 ежедневно)</span>
       </p>
       <button class="button feedback-button">Форма обратной связи</button>
