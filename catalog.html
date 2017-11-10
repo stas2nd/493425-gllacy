@@ -36,7 +36,7 @@
   <section class="modal modal-cart">
     <table class="cart-table">
       <tr>
-        <td><span>x</span></td>
+        <td><button class="button-cart-delete">x</button></td>
         <td><img class="small" src="img/1.jpg" width="33" height="33"></td>
         <td class="cart-item-description">Пломбир с апельсиновым джемом</td>
         <td class="cart-item-amount">1,5 кг х </td>
@@ -44,7 +44,7 @@
         <td class="cart-item-total">300 руб.</td>
       </tr>
       <tr>
-        <td><span>x</span></td>
+        <td><button class="button-cart-delete">x</button></td>
         <td><img class="small" src="img/3.jpg" width="33" height="33"></td>
         <td class="cart-item-description">Клубничный пломбир с присыпкой из белого шоколада</td>
         <td class="cart-item-amount">1,5 кг х </td>
@@ -57,7 +57,7 @@
       </tr>
     </table>
     <p class="cart-button">
-      <a href="#" class="button">Оформить заказ</a>
+      <button href="#" class="button">Оформить заказ</button>
     </p>
   </section>
 
@@ -81,7 +81,44 @@
   <section class="filter">
     <h1 class="visually-hidden">Фильтр товаров</h1>
     <form>
-      <!-- здесь формы баттоны и прочее -->
+      <p>
+        <label class="filter-item-label" for="filter-sort">Сортировка:</label>
+        <select class="filter-item filter-sort" id="filter-sort" name="filter-sort">
+            <option value="1">по популярности</option>
+            <option value="2">сначала недорогие</option>
+            <option value="3">сначала дорогие</option>
+            <option value="4">по жирности</option>
+        </select>   
+      </p>
+      <p>
+        <label class="filter-item-label" for="filter-range">Цена:</label>
+        <input class="filter-item filter-range" type="range" id="filter-range">
+      </p>
+      <fieldset class="filter-field filter-fat">
+        <legend>Жирность:</legend>
+        <input type="radio" name="filter-fat-item" value="1" id="fat-1">
+        <label class="filter-label" for="fat-1">0%</label>
+        <input type="radio" name="filter-fat-item" value="2" id="fat-2" checked>
+        <label class="filter-label" for="fat-2">до 10%</label>
+        <input type="radio" name="filter-fat-item" value="3" id="fat-3">
+        <label class="filter-label" for="fat-3">до 30%</label>
+        <input type="radio" name="filter-fat-item" value="4" id="fat-4">
+        <label class="filter-label" for="fat-4">свыше 30%</label>
+      </fieldset>
+      <fieldset class="filter-field filter-fillers">
+        <legend>Наполнители:</legend>
+        <input type="checkbox" name="chocolate" id="chocolate" checked>
+        <label class="filter-label" for="chocolate">шоколадные</label>
+        <input type="checkbox" name="shugar" id="shugar" checked>
+        <label class="filter-label" for="shugar">сахарные присыпки</label>
+        <input type="checkbox" name="fruits" id="fruits">
+        <label class="filter-label" for="fruits">фрукты</label>
+        <input type="checkbox" name="syrop" id="syrop">
+        <label class="filter-label" for="syrop">сиропы</label>
+        <input type="checkbox" name="jam" id="jam">
+        <label class="filter-label" for="jam">джемы</label>
+      </fieldset>
+      <button class="filter-button">Применить</button>    
     </form>
   </section>
 
@@ -260,6 +297,34 @@
     <p class="copyright">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
   </div>
 </footer>
+
+<section class="modal modal-login">
+  <h3 class="visually-hidden">Личный кабинет</h3>
+  <form class="login-form">
+     <form>
+      <p>
+        <label class="visually-hidden" for="login-field">Логин</label>
+        <input type="text" id="modal-login-field" placeholder="Электронная почта">
+      </p>
+      <p>
+        <label class="visually-hidden" for="modal-password-field">Пароль</label>
+        <input type="password" id="modal-password-field" placeholder="Пароль">
+      </p>
+      <p>
+        <button type="submit">Войти</button>
+      </p>
+    <p class="login-tip">
+      <a href="#" class="modal-login-link">Забыли пароль?</a>
+      <a  href="#" class="modal-login-link">Новая регистрация</a>
+    </p>
+  </form>
+</section>
+
+<section class="modal modal-searching">
+  <form class="modal-searchig-form">
+    <input type="text">
+  </form>
+</section>
 
 </body>
 </html>

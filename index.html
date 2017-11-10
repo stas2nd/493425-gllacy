@@ -24,7 +24,7 @@
       <li><a href="#">О компании</a></li>
     </ul>
     <div class="main-searching">
-      <button>class="button-head searching-button"></button> 
+      <button class="button-head searching-button"></button> 
     </div>
     <ul class="navigation-user">
       <li><button class="button-head login-button">Вход</button></li>
@@ -173,10 +173,10 @@
   <section class="address-area">
     <img class="address-map" src="img/index/map.png" width="1200" height="640" alt="Карта для нахождения магазина мороженого «Gllacy Shop»">
     <div class="feedback">
-      <address class="feedback-address">
+      <p class="feedback-address">
         <span class="feedback-title">Адрес главного офиса и офлайн-магазина:</span>
-        <span  class="feedback-info">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
-      </address>
+        <address class="feedback-info">ул. Большая Конюшенная 19/8, Санкт-Петербург</address>
+      </p>
       <p class="feedback-phone">
         <span class="feedback-title">Для заказов по телефону:</span>
         <a href="tel:88124502525" class="feedback-info">8 812 450-25-25</a>
@@ -216,28 +216,50 @@
 <section class="modal modal-login">
   <h3 class="visually-hidden">Личный кабинет</h3>
   <form class="login-form">
-     <!-- поле ввода и поле пароля -->
-    <input class="button" type="submit" value="Войти">
+     <form>
+      <p>
+        <label class="visually-hidden" for="login-field">Логин</label>
+        <input type="text" id="modal-login-field" placeholder="Электронная почта">
+      </p>
+      <p>
+        <label class="visually-hidden" for="modal-password-field">Пароль</label>
+        <input type="password" id="modal-password-field" placeholder="Пароль">
+      </p>
+      <p>
+        <button type="submit">Войти</button>
+      </p>
     <p class="login-tip">
-      <a href="#" class="login-link">Забыли пароль?</a>
-      <a  href="#" class="login-link">Новая регистрация</a>
+      <a href="#" class="modal-login-link">Забыли пароль?</a>
+      <a  href="#" class="modal-login-link">Новая регистрация</a>
     </p>
   </form>
 </section>
 
 <section class="modal modal-searching">
   <form class="modal-searchig-form">
-    <!-- форма текстовая для поиска-->
+    <input type="text">
   </form>
 </section>
 
 <section class="modal modal-feedback">
   <form class="modal-feedback-form">
+    <p>
       <b class="modal-feedback-greeting">Мы обязательно вам ответим!</b>
-    <!-- 3 текстовых поля -->
-      <input type="submit" class="button" value="Отправить">
+    </p>
+    <p>
+        <label class="visually-hidden" for="modal-feedback-field">Ваше имя</label>
+        <input type="text" id="modal-feedback-field" placeholder="Как вас зовут?">
+    </p>
+    <p>
+        <label class="visually-hidden" for="modal-feedback-field">Ваша почта</label>
+        <input type="password" id="modal-feedback-field" placeholder="Ваша почта для ответа?">
+    </p>
+    <p>
+      <textarea placeholder="Напишите что-нибудь..."></textarea>
+    </p>
+      <button type="submit" class="button">Отправить</button>
   </form>
-  <span class="modal-close">x</span>
+  <button class="modal-close"></button>
 </section>
   </body>
 </html>
