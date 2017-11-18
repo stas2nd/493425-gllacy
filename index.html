@@ -11,7 +11,7 @@
     <ul class="navigation-list">
       <li><a class="navigation-list-sub" href="#">Каталог</a>
         <ul class="navigation-list-sub-menu">
-          <li class="navigation-list-sub-menu-item">Новинки
+          <li class="navigation-list-sub-menu-item" tabindex="0">Новинки
             <ul class="sub-sub-menu">
               <li class="sub-sub-menu-item"><a href="#" class="navigation-menu-link">Сливочное</a></li>
               <li class="sub-sub-menu-item"><a href="#" class="navigation-menu-link">Щербеты</a></li>
@@ -32,34 +32,6 @@
       <li><button class="button-head button-cart">Пусто</button></li>
     </ul>
   </nav>
-
-<section class="modal modal-cart">
-    <table class="modal-cart-table">
-      <tr class="modal-cart-item">
-        <td><button class="button-x button-cart-delete">x</button></td>
-        <td><img class="small" src="img/1.jpg" width="33" height="33"></td>
-        <td class="modal-cart-item-description">Пломбир с апельсиновым джемом</td>
-        <td class="modal-cart-item-amount">1,5 кг х </td>
-        <td class="modal-cart-item-price">200 руб.</td>
-        <td class="modal-cart-item-total">300 руб.</td>
-      </tr>
-      <tr class="modal-cart-item">
-        <td><button class="button-x button-cart-delete">x</button></td>
-        <td><img class="small" src="img/3.jpg" width="33" height="33"></td>
-        <td class="modal-cart-item-description">Клубничный пломбир с присыпкой из белого шоколада</td>
-        <td class="modal-cart-item-amount">1,5 кг х </td>
-        <td class="modal-cart-item-price">300 руб.</td>
-        <td class="modal-cart-item-total">450 руб.</td>
-      </tr>
-      <tr class="modal-cart-total">
-        <td colspan="5">Итого: </td>
-        <td class="total">750 руб.</td>
-      </tr>
-    </table>
-    <p class="cart-button">
-      <button href="#" class="button">Оформить заказ</button>
-    </p>
-  </section>
 
   <div class="header-schedule-phone">
     <p class="header-schedule">с 10 до 20, ежедневно</p>
@@ -198,12 +170,14 @@
     <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
     <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="get">
       <input type="email" name="subscribe-form-email" placeholder="Электронная почта">
-      <input class="button button-subscribe" type="submit" value="Отправить">
+      <button class="button button-subscribe" type="submit">Отправить</button>
     </form>
   </section>
 
   <section class="address-area">
-    <img class="address-area-map" src="img/index/map.png" width="1200" height="640" alt="Карта для нахождения магазина мороженого «Gllacy Shop»">
+    <p class="address-area-map">
+      <img src="img/index/map.png" width="1200" height="640" alt="Магазина мороженого «Gllacy Shop» находится по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург">
+    </p>  
     <div class="feedback">
       <p class="feedback-address">
         <span class="feedback-title">Адрес главного офиса и офлайн-магазина:</span>
@@ -228,16 +202,14 @@
       <li><a class="button-social" href="#">Вконтакте</a></li>
   </ul>
 
-  <section class="main-footer-info">
-    <dl class="main-footer-info-list">
-      <dt class="main-footer-info-providers">Для поставщиков</dt>
-      <dd><a href="#" class="main-footer-info-link">О производстве</a></dd>
-    </dl>
-    <dl class="main-footer-info-list">
-      <dt class="main-footer-info-documents">Наши документы</dt>
-      <dd><a href="#" class="main-footer-info-link">Экологические стандарты</a></dd>
-    </dl>
-  </section>
+  <nav class="main-footer-navigation">
+    <ul class="main-footer-navigation-list">
+      <li><a href="#" class="main-footer-navigation-list-link heart">Для поставщиков</a></li>
+      <li><a href="#" class="main-footer-navigation-list-link">О производстве</a></li>
+      <li><a href="#" class="main-footer-navigation-list-link">Наши документы</a></li>
+      <li><a href="#" class="main-footer-navigation-list-link">Экологические стандарты</a></li>
+    </ul>
+  </nav>
 
   <div class="main-footer-copyright">
     <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="main-footer-logo" src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="Лого для футера магазина мороженого «Gllacy Shop»"></a>
