@@ -44,6 +44,7 @@
   <h1 class="visually-hidden">Магазин мороженого «Gllacy Shop»</h1>
 
   <section class="promo-slider">
+    <h1 class="visually-hidden">Промо-слайдер</h1>
    <div class="promo-slider-images">
     <div class="promo-slider-item">
       <p class="promo-slider-image">
@@ -67,28 +68,29 @@
       <a href="#" class="button button-promo">Давайте оба!</a>
     </div>
    </div>
-      <div class="visually-hidden">
-            <input type="radio" id="btn-1" name="toggle" checked>
-            <input type="radio" id="btn-2" name="toggle">
-            <input type="radio" id="btn-3" name="toggle">
-      </div>
-      <div class="promo-switch">
-              <label for="btn-1"></label>
-              <label for="btn-2"></label>
-              <label for="btn-3"></label>
-      </div>
+      <ul class="promo-switch">
+        <li class="slide-radio">
+          <button class="button-slide">Первый слайд</button>
+        </li>
+        <li class="slide-radio">
+          <button class="button-slide">Второй слайд</button>
+        </li>
+        <li class="slide-radio">
+          <button class="button-slide">Третий слайд</button>
+        </li>
+      </ul>
   </section>
 
   <section class="banners-area">
-    <h2 class="visually-hidden">Спецпредложения</h2>
+    <h1 class="visually-hidden">Спецпредложения</h1>
     <ul class="banners">
       <li class="banner">
-        <h3 class="banner-title">Малинка даром!</h3>
+        <h2 class="banner-title">Малинка даром!</h2>
         <p class="banner-description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малиновго варенья бесплатно.</p>
         <a class="button button-banner">Хочу варенье!</a>
       </li>
       <li class="banner">
-        <h3 class="banner-title">Шоколадки даром!</h3>
+        <h2 class="banner-title">Шоколадки даром!</h2>
         <p class="banner-description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
         <a class="button button-banner">Хочу шоколадки!</a>
       </li>
@@ -96,6 +98,7 @@
   </section>
 
   <section class="catalog-items">
+    <h1 class="visually-hidden">Хиты продаж</h1>
     <ul class="catalog-items-list">
       <li class="catalog-item catalog-item__hit">
         <p class="catalog-item-image">
@@ -165,7 +168,7 @@
   <section class="all-block">
   <article class="blog-news">
     <p class="blog-notice">Новое в нашем блоге</p>
-    <h4 class="blog-title"><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h4>
+    <h1 class="blog-title"><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h1>
   </article>
   <div class="subscribe">
     <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
@@ -176,7 +179,7 @@
   </div>
   </section>
 
-  <section class="address-area">
+  <div class="address-area">
     <p class="address-area-map">
       <img src="img/index/map.png" width="1200" height="640" alt="Магазина мороженого «Gllacy Shop» находится по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург">
     </p>
@@ -194,7 +197,7 @@
       <button class="button button-feedback">Форма обратной связи</button>
     </div>
   </div>
-  </section>
+  </div>
 </main>
 
 <footer class="main-footer">
@@ -221,7 +224,7 @@
 </footer>
 
 <section class="modal modal-login">
-  <h3 class="visually-hidden">Личный кабинет</h3>
+  <h1 class="visually-hidden">Личный кабинет</h1>
   <form class="modal-login-form" action="https://echo.htmlacademy.ru" method="get">
       <p>
         <label class="visually-hidden" for="modal-login-field">Логин</label>
@@ -249,6 +252,7 @@
 </section>
 
 <section class="modal modal-feedback">
+  <h1 class="visually-hidden">Форма обратной связи</h1>
   <form class="modal-feedback-form" action="https://echo.htmlacademy.ru" method="get">
     <p>
       <b class="modal-feedback-greeting">Мы обязательно вам ответим!</b>
