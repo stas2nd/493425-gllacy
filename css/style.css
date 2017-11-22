@@ -168,8 +168,16 @@ li .navigation-list-item:active {
 	border-radius: 5px;
 }
 
-.sub-sub-menu-item-current {
+.sub-sub-menu-item-current .navigation-menu-link {
 	background-color: #d07058;
+}
+
+.navigation-menu-link {
+	display: block;
+	width: 123px;
+	padding-left: 20px;
+	height: 28px;
+	line-height: 28px;
 }
 
 .sub-sub-menu-item-current .navigation-menu-link {
@@ -182,9 +190,9 @@ li:hover .navigation-list-sub-menu {
 
 .sub-sub-menu-item {
 	width: 123px;
-	min-height: 28px;
+	height: 28px;
 	line-height: 28px;
-	padding-left: 20px;
+
 	margin: 5px 0;
 }
 
@@ -215,7 +223,7 @@ li:hover .navigation-list-sub-menu {
 	border-top: 1px solid rgba(50, 50, 50, 0.2);
 }
 
-.sub-sub-menu-item:hover {
+.navigation-menu-link:hover {
 	background-color: #fbded7;
 }
 
@@ -223,14 +231,13 @@ li:hover .navigation-list-sub-menu {
 	color: #323232;
 }
 
-.sub-sub-menu-item:active {
+.sub-sub-menu-item .navigation-menu-link:active {
 	background-color: #f6b5a5;
 }
 
 .sub-sub-menu a {
 	text-decoration: none;
 	font-size: 14px;
-	line-height: 16px;
 	font-weight: normal;
 	color: #323232;
 }
