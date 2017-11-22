@@ -60,20 +60,26 @@
   <section class="filter">
     <h1 class="visually-hidden">Фильтр товаров</h1>
     <form class="filter-form" action="https://echo.htmlacademy.ru" method="get" oninput="filter-item-price.value=filter-range1.value">
-      <p>
+      <div class="filter-flexbox">
         <label class="filter-item-label" for="filter-sort">Сортировка:</label>
+        <div class="select-wrapper">
         <select class="filter-item filter-sort" id="filter-sort" name="filter-sort">
             <option value="1">по популярности</option>
             <option value="2">сначала недорогие</option>
             <option value="3">сначала дорогие</option>
             <option value="4">по жирности</option>
         </select>
-      </p>
-      <p>
+        </div>
+      </div>
+      <div class="filter-flexbox">
         <label class="filter-item-label" for="filter-range">Цена:</label>
         <output name="filter-item-price">100</output><span> руб.</span>
-        <div class="filter-item filter-range"><button class="filter-item button-range" type="button" name="filter-range1" id="filter-range1"></button><button class="filter-item button-range" type="button" name="filter-range2" id="filter-range2"></button></div>
-      </p>
+        <div class="filter-item filter-range">
+          <button type="button" class="button-range" name="filter-range1" id="filter-range1"></button>
+          <button type="button" class="button-range" name="filter-range2" id="filter-range2"></button>
+        </div>
+      </div>
+      <div class="filter-flexbox">
       <label class="filter-item-label" for="fat-1">Жирность:</label>
       <div class="filter-field filter-fat">
          <div>
@@ -88,11 +94,13 @@
            <input type="radio" name="filter-fat-item" value="3" id="fat-3">
            <label class="filter-label filter-label-fat" for="fat-3">до 30%</label>
         </div>
-        <div>
+        <div class="filter-flexbox">
             <input type="radio" name="filter-fat-item" value="4" id="fat-4">
             <label class="filter-label filter-label-fat" for="fat-4">выше 30%</label>
         </div>
         </div>
+      </div>
+      <div class="filter-flexbox">
       <label class="filter-item-label" for="chocolate">Наполнители:</label>
       <div class="filter-field filter-fillers">
           <div>
@@ -116,7 +124,8 @@
             <label class="filter-label filter-label-filler" for="jam">джемы</label>
           </div>
       </div>
-      <button class="button-filter">Применить</button>
+     </div>
+      <button class="filter-flexbox button-filter">Применить</button>
     </form>
   </section>
   </div>
