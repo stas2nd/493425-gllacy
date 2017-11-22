@@ -192,17 +192,17 @@ li:hover .navigation-list-sub-menu {
 	width: 123px;
 	height: 28px;
 	line-height: 28px;
-
-	margin: 5px 0;
+	margin: 3px 0;
 }
 
 .sub-sub-menu {
+	padding-top: 2px;
 	padding-bottom: 3px;
 }
 
 
 .navigation-list-sub-menu-item {
-	padding-top: 10px;
+	padding-top: 11px;
 }
 
 .navigation-list-sub-menu-item span {
@@ -219,7 +219,7 @@ li:hover .navigation-list-sub-menu {
 	position: absolute;
 	width: 128px;
 	left: 6px;
-	top: -7px;
+	top: -6px;
 	border-top: 1px solid rgba(50, 50, 50, 0.2);
 }
 
@@ -231,7 +231,7 @@ li:hover .navigation-list-sub-menu {
 	color: #323232;
 }
 
-.sub-sub-menu-item .navigation-menu-link:active {
+.navigation-menu-link:active {
 	background-color: #f6b5a5;
 }
 
@@ -371,7 +371,8 @@ li:hover .navigation-list-sub-menu {
 
 .breadcrumbs-list > li {
     position: relative;
-    display: inline-block;	
+    display: inline-block;
+    vertical-align: top;
 }
 
 
@@ -435,10 +436,26 @@ li:hover .navigation-list-sub-menu {
 }
 
 .select-wrapper {
+	position: relative;
 	width: 193px;
 	min-height: 36px;
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 40px;
+}
+
+.select-wrapper::after {
+	content: "▼";
+	position: absolute;
+	width: 11px;
+	height: 10px;
+
+	right: 17px;
+	top: 7px;
+	z-index: 1;
+}
+
+.select-wrapper:hover::after {
+	color: #323232;
 }
 
 .filter-form select {
@@ -446,20 +463,27 @@ li:hover .navigation-list-sub-menu {
 	min-height: 36px;
 	padding: 0;
 	margin: 0;
-	padding-left: 10px;
+	padding-left: 15px;
+
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
+
 	border: none;
 	background-color: transparent;
 	color: #ffffff;
 	border-radius: 40px;
+
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
 .select-wrapper:hover select {
 	color: #323232;
 }
 
+.filter-form select:active,
 .select-wrapper:active select,
 .select-wrapper:focus select{
 	color: #323232;
@@ -1184,16 +1208,19 @@ a.feedback-info:active {
 	height: 32px;
 	border-radius: 50%;
 	border: 3px solid rgba(255, 255, 255, 0.6);
+	-webkit-filter: opacity(0.8);
 	filter: opacity(0.8);
 }
 
 .button-social:hover {
 	border: 3px solid rgba(255, 255, 255, 0.5);
+	-webkit-filter: opacity(1);
 	filter: opacity(1);
 }
 
 .button-social:active {
 	border: 3px solid rgba(255, 255, 255, 0.9);
+	-webkit-filter: opacity(0.8);
 	filter: opacity(0.8);
 }
 
