@@ -88,7 +88,10 @@ a:active:not(.button) {
 	padding: 0 27px;
 	margin-top: 10px;
 	line-height: 18px;
-	margin-bottom: 450px;
+}
+
+.main-header.index {
+	margin-bottom: 450px;	
 }
 
 .main-header-logo {
@@ -127,6 +130,7 @@ a:active:not(.button) {
 	border-radius: 20px;
 }
 
+li .navigation-list-item:focus,
 li .navigation-list-item:hover {
 	text-decoration: none;
 	color: #323232;
@@ -153,7 +157,7 @@ li .navigation-list-item:active {
 }
 
 .navigation-list-sub-menu {
-	display: none;
+	visibility: hidden;
 	position: absolute;
 	font-size: 14px;
 	line-height: 16px;
@@ -184,8 +188,14 @@ li .navigation-list-item:active {
 	color: #ffffff;
 }
 
-li:hover .navigation-list-sub-menu {
-	display: block;
+li:hover .navigation-list-sub-menu,
+li:focus .navigation-list-sub-menu,
+li:active .navigation-list-sub-menu,
+.navigation-list-item:hover + .navigation-list-sub-menu,
+.navigation-list-item:focus + .navigation-list-sub-menu,
+.navigation-list-item:active + .navigation-list-sub-menu,
+.navigation-menu-link:focus {
+	visibility: visible;
 }
 
 .sub-sub-menu-item {
@@ -223,6 +233,7 @@ li:hover .navigation-list-sub-menu {
 	border-top: 1px solid rgba(50, 50, 50, 0.2);
 }
 
+.navigation-menu-link:focus,
 .navigation-menu-link:hover {
 	background-color: #fbded7;
 }
@@ -252,11 +263,15 @@ li:hover .navigation-list-sub-menu {
 }
 
 .button-head {
+	display: block;
 	padding: 0;
 	margin: 0;
+
+	text-decoration: none;
 	font-size: 14px;
-	line-height: 16px;
+	line-height: 32px;
 	font-weight: 500;
+
 	background-color: rgba(255, 255, 255, 0.2);
 	border: none;
 	border-radius: 15px;
@@ -281,6 +296,7 @@ li:hover .navigation-list-sub-menu {
 }
 
 .button-searching:hover {
+	color: #323232;
 	background-color: #f8f7f4;
 	background-image: url(../img/loupe-inv.png);
 	background-repeat: no-repeat;
@@ -288,12 +304,16 @@ li:hover .navigation-list-sub-menu {
 }
 
 .button-login {
-	width: 92px;
+	width: 48px;
 	height: 32px;
-	padding-left: 25px;
+	padding-left: 44px;
 	background-image: url(../img/enter.svg);
 	background-repeat: no-repeat;
 	background-position: 20%;
+}
+
+a.button-login:hover {
+	color: #323232;
 }
 
 .button-login:hover {
@@ -304,13 +324,18 @@ li:hover .navigation-list-sub-menu {
 }
 
 .button-cart {
-	width: 117px;
+	width: 72px;
 	height: 32px;
-	padding-left: 25px;
+	padding-left: 45px;
 	background-image: url(../img/cart.svg);
 	background-repeat: no-repeat;
 	background-position: 15%;	
 }
+
+a.button-cart:hover {
+	color: #323232;
+}
+
 
 .button-cart:hover {
 	background-color: #f8f7f4;
@@ -451,11 +476,7 @@ li:hover .navigation-list-sub-menu {
 
 	right: 17px;
 	top: 7px;
-	z-index: 1;
-}
 
-.select-wrapper:hover::after {
-	color: #323232;
 }
 
 .filter-form select {
@@ -474,9 +495,14 @@ li:hover .navigation-list-sub-menu {
 	color: #ffffff;
 	border-radius: 40px;
 
+	cursor: pointer;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+}
+
+.select-wrapper:hover::after {
+	color: #323232;
 }
 
 .select-wrapper:hover select {
@@ -484,21 +510,30 @@ li:hover .navigation-list-sub-menu {
 }
 
 .filter-form select:active,
+.filter-form select:focus,
 .select-wrapper:active select,
-.select-wrapper:focus select{
+.select-wrapper:focus select {
 	color: #323232;
 	background-color: #f6f8f7;
+}
+
+.select-wrapper:active::after,
+.select-wrapper:focus::after {
+	color: #323232;	
 }
 
 .button-range {
 	width: 4px;
 	height: 4px;
 	padding: 0;
+
 	border-radius: 50%;
 	background-color: transparent;
 	border: none;
 	border: 8px solid #f3f4f3;
+
 	box-sizing: content-box;
+	cursor: pointer;
 }
 
 .filter-range,
@@ -541,6 +576,7 @@ li:hover .navigation-list-sub-menu {
 
 .filter-label {
 	position: relative;
+	cursor: pointer;
 }
 
 .filter-label-fat::before {
@@ -575,6 +611,10 @@ input[type="radio"]:checked:hover ~.filter-label::after {
 input[type="radio"]:disabled ~ .filter-label::before,
 input[type="radio"]:disabled ~ .filter-label::after {
 	border-color: rgba(255, 255, 255, 0.4);
+}
+
+.filter-label-filler {
+	cursor: pointer;
 }
 
 .filter-fillers {
@@ -662,11 +702,14 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 	margin: 0;
 	width: 143px;
 	height: 36px;
+
 	line-height: 18px;
 	font-weight: 500;
+
 	background-color: rgba(255, 255, 255, 0.2);
 	border: 2px solid white;
 	border-radius: 20px;
+	cursor: pointer;
 }
 .button-filter:hover {
 	background-color: #ffffff;
@@ -675,6 +718,8 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 
 .button-filter:active {
 	background-color: #eaeaea;
+	box-shadow: inset 0 2px 1px #696969;
+	border: none;
 }
 
 .promo-switch {
@@ -689,10 +734,13 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 	margin: 0;
 	width: 18px;
 	height: 18px;
+
 	font-size: 0;
+
 	border-radius: 50%;
 	background-color: transparent;
 	border: 2px solid #fefefe;
+	cursor: pointer;
 }
 
 .button-slide:hover {
@@ -812,6 +860,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 .catalog-item-price {
 	padding: 0;
 	margin: 0;
+	cursor: pointer;
 }
 
 .catalog-item {
@@ -871,6 +920,8 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 .catalog-item-quick .button {	
 	width: 200px;
 	height: 44px;
+
+	line-height: 44px;
 	border-radius: 20px;
 }
 
@@ -1131,6 +1182,8 @@ a.feedback-info:active {
 .button-feedback {
 	width: 251px;
 	height: 43px;
+
+	line-height: 43px;
 }
 
 .pagination-list {
@@ -1225,7 +1278,13 @@ a.feedback-info:active {
 }
 
 .button-social a{
-	font-size: 0;
+	display: block;
+	width: 38px;
+	height: 38px;
+	margin: 0;
+	padding: 0;
+
+	border-radius: 50%;
 }
 
 .twitter {
@@ -1350,7 +1409,7 @@ a.modal-login-link:active {
 	height: 42px;
 	padding: 0;
 	margin: 0;
-	padding-left: 10px;
+	padding-left: 14px;
 	font: inherit;
 	border: 1px solid #b2b2b2;
 	border-radius: 5px;
@@ -1360,14 +1419,14 @@ a.modal-login-link:active {
 .modal input:hover,
 .modal textarea:hover {
 	height: 40px;
-	padding-left: 9px;
+	padding-left: 13px;
 	border: 2px solid #9a9a9a;
 }
 
 .modal input:focus,
 .modal textarea:focus {
 	height: 40px;
-	padding-left: 9px;
+	padding-left: 13px;
 	line-height: 24px;
 	font-weight: bold;
 	outline: none;
@@ -1377,14 +1436,17 @@ a.modal-login-link:active {
 .modal  textarea {
 	width: 428px;
 	height: 155px;
+	padding-top: 10px;
 }
 
 .modal textarea:hover {
-	height: 153px;
+	height: 154px;
+	padding-top: 9px;
 }
 
 .modal textarea:focus {
-	height: 153px;
+	height: 154px;
+	padding-top: 9px;
 }
 
 .modal input:focus::-webkit-input-placeholder {
@@ -1397,6 +1459,19 @@ a.modal-login-link:active {
 	color: transparent;
 }
 .modal input:focus:-ms-input-placeholder {
+	color: transparent;
+}
+
+.modal textarea:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+.modal textarea:focus::-moz-placeholder {
+	color: transparent;
+}
+.modal textarea:focus:-moz-placeholder {
+	color: transparent;
+}
+.modal textarea:focus:-ms-input-placeholder {
 	color: transparent;
 }
 
@@ -1470,6 +1545,9 @@ a.modal-login-link:active {
 }
 
 .visually-hidden {
-	padding: 0;
-	margin: 0;
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
 }
