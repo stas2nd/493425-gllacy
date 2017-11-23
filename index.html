@@ -10,6 +10,10 @@
 </head>
 
 <body>
+            <input class="visually-hidden" type="radio" id="product-1" name="toggle-promo" checked>
+            <input class="visually-hidden" type="radio" id="product-2" name="toggle-promo">
+            <input class="visually-hidden" type="radio" id="product-3" name="toggle-promo">
+    <div class="site-wrapper">
     <div class="container">  
         <header class="main-header index">
             <nav class="main-navigation">
@@ -49,47 +53,47 @@
         <div class="container-wrapper">
             <h1 class="visually-hidden">Магазин мороженого «Gllacy Shop»</h1>
 
+            
+
             <section class="promo-slider">
                 <h1 class="visually-hidden">Промо-слайдер</h1>
 
-                <div class="promo-slider-images">
-                    <div class="promo-slider-item">
-                        <p class="promo-slider-image">
+                <ul class="promo-switch">
+                    <li class="slide-radio">
+                        <label class="button-slide current-slide" for="product-1">Первый слайд</label>
+                    </li>
+                    <li class="slide-radio">
+                        <label class="button-slide" for="product-2">Второй слайд</label>
+                    </li>
+                    <li class="slide-radio">
+                        <label class="button-slide" for="product-3">Третий слайд</label>
+                    </li>
+                </ul>
+
+                <ul class="promo-slider-list">
+                    <li class="promo-slider-item">
+                        <p class="promo-slider-image" id="slide1">
                             <img class="promo-image" src="img/index/creme-brulee-and-cream-raspberry.png" width="1079" height="854" alt="Крем-брюле и пломбир с малиновым джемом">
                         </p>
                         <p class="promo-text">Крем-брюле и пломбир с малиновым джемом</p>
-                        <button type="button" class="button button-promo">Давайте оба!</button>
-                    </div>
-                    <div class="promo-slider-item">
+                        <a class="button button-promo">Давайте оба!</a>
+                    </li>
+                    <li class="promo-slider-item" id="slide2">
                         <p class="promo-slider-image">
                             <img class="promo-image" src="img/index/chocolate-creme-and-lemon-ice.png" width="1065" height="859" alt="Шоколадный пломбир и лимонный сорбет">
                         </p>
                         <p class="promo-text">Шоколадный пломбир и лимонный сорбет</p>
-                        <button type="button" class="button button-promo">Давайте оба!</button>
-                    </div>
-                    <div class="promo-slider-item">
+                        <a class="button button-promo">Давайте оба!</a>
+                    </li>
+                    <li class="promo-slider-item" id="slide3">
                         <p class="promo-slider-image">
                             <img class="promo-image" src="img/index/creme-sauce-and-strawberry-ice.png" width="1079" height="854" alt="Пломбир с помадкой и клубничный щербет">
                         </p>
                         <p class="promo-text">Пломбир с помадкой и клубничный щербет</p>
-                        <button type="button" class="button button-promo">Давайте оба!</button>
-                    </div>
-                </div>
-            </section>
-
-            <div class="switch-slider">
-                <ul class="promo-switch">
-                    <li class="slide-radio">
-                        <button class="button-slide current-slide">Первый слайд</button>
-                    </li>
-                    <li class="slide-radio">
-                        <button class="button-slide">Второй слайд</button>
-                    </li>
-                    <li class="slide-radio">
-                        <button class="button-slide">Третий слайд</button>
+                        <a class="button button-promo">Давайте оба!</a>
                     </li>
                 </ul>
-            </div> 
+            </section>
 
             <section class="banners-area">
                 <h1 class="visually-hidden">Спецпредложения</h1>
@@ -294,5 +298,6 @@
             <button class="button-x modal-close">Закрыть</button>
         </section>
     </div>
+</div>
 </body>
 </html>

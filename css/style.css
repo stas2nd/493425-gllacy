@@ -1,4 +1,5 @@
 body {
+	min-width: 1200px;
     margin: 0;
     padding: 0;
 
@@ -8,11 +9,16 @@ body {
     font-weight: 400;
     color: #ffffff;
   
-    background-color: #849d8f;
+/*    background-color: #849d8f;*/
 }
 
 main {
 	width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 a,
@@ -30,9 +36,8 @@ button {
 }
 
 .button {
-	display: block;
 	position: relative;
-	padding: 0;
+	padding: 12px 40px;
 	margin: 0;
 
 	font-size: 18px;
@@ -92,7 +97,7 @@ a:active:not(.button) {
 	width: 1146px;
 	padding: 0 27px;
 	margin-top: 10px;
-	margin-bottom: 28px;
+	margin-bottom: 26px;
 
 	line-height: 18px;
 }
@@ -103,13 +108,9 @@ a:active:not(.button) {
 	width: 1146px;
 	padding: 0 27px;
 	margin-top: 10px;
-	margin-bottom: 28px;
+/*	margin-bottom: 450px;	*/
 
 	line-height: 18px;
-}
-
-.main-header.index {
-	margin-bottom: 450px;	
 }
 
 .main-header-logo {
@@ -127,7 +128,8 @@ a:active:not(.button) {
 
 .navigation-list {
 	display: flex;
-	min-width: 710px;
+	flex-wrap: wrap;
+	width: 710px;
 }
 
 .navigation-list > li {
@@ -360,8 +362,8 @@ li:focus .navigation-list-sub-menu a,
 }
 
 .button-login {
-	width: 48px;
-	height: 32px;
+	min-width: 48px;
+	min-height: 32px;
 	padding-left: 44px;
 
 	background-image: url(../img/enter.svg);
@@ -381,8 +383,8 @@ a.button-login:hover {
 }
 
 .button-cart {
-	width: 72px;
-	height: 32px;
+	min-width: 72px;
+	min-height: 32px;
 	padding-left: 45px;
 
 	background-image: url(../img/cart.svg);
@@ -452,14 +454,6 @@ a.header-phone:active {
 	color: #e84d37;
 }
 
-/*.promo-slider {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	min-height: 572px;
-}*/
-
 .breadcrumbs-list {
 	position: relative;
 	padding: 0;
@@ -474,8 +468,18 @@ a.header-phone:active {
     position: relative;
     display: inline-block;
     vertical-align: top;
+
 }
 
+.breadcrumbs-list:not(.breadcrumbs-current) > li {
+	margin-right: 17px;
+}
+
+.breadcrumbs-list > li:not(.breadcrumbs-current)::after {
+	position: absolute;
+	content: "»";
+	right: -13px;
+}
 
 .breadcrumbs-list a {
 	padding: 0;
@@ -498,7 +502,7 @@ a.header-phone:active {
 }
 
 .filter {
-	margin-top: 30px;
+	margin-top: 26px;
 }
 
 .filter-form {
@@ -506,13 +510,15 @@ a.header-phone:active {
 	flex-wrap: wrap;
 	width: 860px;
 	min-height: 131px;
-	align-content: flex-end;
+	align-items: stretch;
+	align-content: space-between;
 }
 
 .filter-flexbox {
 	display: flex;
 	flex-direction: column;
-	height: 65.5px;
+/*	height: 65.5px;*/
+	justify-content: flex-end;
 	margin-right: 15px;
 }
 
@@ -530,23 +536,12 @@ a.header-phone:active {
 .filter-form output {
 	padding: 0;
 	margin: 0;
+	padding-left: 15px;
 
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 500;
 }
-
-.filter-item-label {
-/*	margin-top: 14px;*/
-	margin-bottom: 7px;
-}
-
-/*.select-wrapper,
-.filter-range,
-.filter-fat,
-.filter-fillers {
-	margin-top: auto;
-}*/
 
 .filter-label {
 	padding: 0;
@@ -646,14 +641,47 @@ a.header-phone:active {
 	cursor: pointer;
 }
 
+.button-range:first-child {
+	position: absolute;
+	top: 8px;
+	left: 34px;
+}
+
+.button-range:last-child {
+	position: absolute;
+	top: 8px;
+	left: 132px;
+}
+
 .filter-range,
 .filter-field {
+	position: relative;
 	padding: 0;
 	margin: 0;
 	min-height: 36px;
 
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 40px;
+}
+
+.filter-range::before {
+	content: "";
+	position: absolute;
+	top: 16px;
+	left: 22px;
+	width: 176px;
+
+	border-top: 4px solid rgba(255, 255, 255, 0.5);
+}
+
+.filter-range::after {
+	content: "";
+	position: absolute;
+	top: 16px;
+	left: 50px;
+	width: 90px;
+
+	border-top: 4px solid rgba(255, 255, 255, 1);
 }
 
 .filter-field {
@@ -710,6 +738,18 @@ a.header-phone:active {
 	left: -24px;
 
 	border-radius: 50%;
+}
+
+.filter-item-label {
+/*	margin-top: 14px;*/
+/*	margin-bottom: 7px;*/
+}
+
+.select-wrapper,
+.filter-range,
+.filter-fat,
+.filter-fillers {
+	margin-top: 7px;
 }
 
 input[type="radio"]:checked ~ .filter-label::after {
@@ -815,8 +855,9 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 .button-filter {
 	padding: 0;
 	margin: 0;
-	width: 143px;
+	min-width: 143px;
 	height: 36px;
+	align-self: flex-end;
 
 	line-height: 18px;
 	font-weight: 500;
@@ -839,25 +880,50 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 	border: none;
 }
 
+.site-wrapper {
+  min-width: 1200px;
+  background-color: #849d8f;
+  background-image: url("../img/index/creme-brulee-and-cream-raspberry.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.promo-slider {
+	position: relative;
+/*	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 572px;*/
+}
+
 .promo-switch {
 	display: flex;
+  	position: absolute;
+    bottom: 63px;
+  	left: 0;
 	padding: 0;
 	margin: 0;
 
+  	font-size: 0;
 	list-style: none;
+
+  	z-index: 20;
 }
 
 .button-slide {
+	display: inline-block;
+	vertical-align: top;
 	padding: 0;
 	margin: 0;
-	width: 18px;
-	height: 18px;
+	width: 17px;
+	height: 17px;
+  	margin-right: 8px;
 
 	font-size: 0;
 
 	border-radius: 50%;
 	background-color: transparent;
-	border: 2px solid #fefefe;
+	border: 2px solid #ffffff;
 
 	cursor: pointer;
 }
@@ -872,10 +938,33 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 	background-color: #ffffff;
 }
 
+.promo-slider-list {
+	padding: 0;
+	margin: 0;
+
+	list-style: none;
+}
+
 .promo-slider-item  {
+	display: none;
+  	position: relative;
+   	padding-top: 321px;
+
 	padding: 0;
 	margin: 0;
 	text-align: center;
+}
+
+#product-1:checked ~ .site-wrapper #slide1,
+#product-2:checked ~ .site-wrapper #slide2,
+#product-3:checked ~ .site-wrapper #slide3 {
+  display: block;
+}
+
+#product-1:checked ~ .site-wrapper label[for="product-1"],
+#product-2:checked ~ .site-wrapper label[for="product-2"],
+#product-3:checked ~ .site-wrapper label[for="product-3"] {
+  background-color: #ffffff;
 }
 
 .promo-text {
@@ -888,7 +977,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 }
 
 .button-promo {
-	width: 278px;
+/*	width: 278px;*/
 	min-height: 63px;
 	margin-left: auto;
 	margin-right: auto;
@@ -956,19 +1045,15 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 	position: absolute;
 	right: 20px;
 	bottom: 20px;
-	width: 165px;
+/*	width: 165px;*/
 	min-height: 45px;
+	padding: 0 22px;
 
 	font-size: 18px;
 	line-height: 45px;
 	vertical-align: middle;
 
 	cursor: pointer;
-}
-
-.banner:last-child .button-banner {
-	width: 189px;
-	min-height: 45px;
 }
 
 .catalog-items {
@@ -1141,7 +1226,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 
 	background-color: #ece0c5;
 	background-image: url(../img/index/waffle-background.jpg);
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	border-radius: 15px;
 }
 
@@ -1266,8 +1351,9 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 }
 
 .button-subscribe {
-	width: 128px;
-	height: 43px;
+/*	width: 128px;
+	height: 43px;*/
+	padding: 10px 20px;
 }
 
 .address-area {
@@ -1362,8 +1448,9 @@ a.feedback-info:active {
 }
 
 .button-feedback {
-	width: 251px;
-	height: 43px;
+/*	width: 251px;
+	height: 43px;*/
+	padding: 10px 27px;
 
 	line-height: 43px;
 }
@@ -1413,7 +1500,6 @@ a.feedback-info:active {
 .page-back a::before {
 	position: absolute;
 	content: "";
-	display: block;
 	width: 9px;
 	height: 14px;
 	top: 5px;
@@ -1429,7 +1515,6 @@ a.feedback-info:active {
 .page-forward a::before {
 	position: absolute;
 	content: "";
-	display: block;
 	width: 9px;
 	height: 14px;
 	top: 5px;
@@ -1444,6 +1529,10 @@ a.feedback-info:active {
 
 .disabled a::before {
 	opacity: 0.2;
+}
+
+.disabled a:active::before {
+	filter: invert(1);
 }
 
 .pagination-item:hover {
@@ -1654,8 +1743,9 @@ a.modal-login-link:active {
 }
 
 .modal-login .button {
-	width: 100px;
-	height: 44px;
+/*	width: 100px;
+	height: 44px;*/
+	padding: 10px 25px;
 }
 
 .modal-searching {
@@ -1682,8 +1772,9 @@ a.modal-login-link:active {
 }
 
 .modal-feedback .button {
-	width: 138px;
-	height: 43px;
+/*	width: 138px;
+	height: 43px;*/
+	padding: 9px 23px;
 }
 
 .subscribe-form input,
@@ -1848,14 +1939,25 @@ a.modal-login-link:active {
 }
 
 .cart-button .button {
-	width: 170px;
-	height: 44px;
+/*	width: 170px;
+	height: 44px;*/
+	padding: 10px 15px;
 }
 
-.visually-hidden {
-	position: absolute;
-	clip: rect(0 0 0 0);
-	width: 1px;
-	height: 1px;
-	margin: -1px;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
