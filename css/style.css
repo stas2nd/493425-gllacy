@@ -1367,10 +1367,10 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 	padding: 0;
 	margin: 0;
 	width: 560px;
-	min-height: 220px;
+	height: 220px;
 
 	background-color: #ffffff;
-	border-radius: 10px;
+	border-radius: 15px;
 }
 
 .blog-notice {
@@ -1379,6 +1379,13 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 }
 
 .blog-news {
+	width: 520px;
+	height: 197px;
+	padding: 0;
+	padding-top: 23px;
+	padding-left: 20px;
+	padding-right: 20px;
+
 	background-image: url("../img/index/strawberry-background.jpg");
 	background-repeat: no-repeat;
 	background-position: 17% 40%;
@@ -1387,9 +1394,13 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 .blog-title {
 	padding: 0;
 	margin: 0;
+	margin-top: 4px;
 }
 
 .blog-title a {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
 	text-decoration-color: rgba(50, 50, 50, 1);
 }
 
@@ -1402,6 +1413,10 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 
 .subscribe {
 	position: relative;
+	width: 508px;
+	height: 154px;
+	padding: 33px 26px;
+
 	background-image: repeating-linear-gradient(135deg, #ffffff 1px, #ffffff 8px, #b1dafc 8px, #b1dafc 15px, #ffffff 15px, #ffffff 22px, #fcbaaf 22px, #fcbaaf 29px, #ffffff 29px);
 	color: #5a5a5a;
 }
@@ -1409,12 +1424,12 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 .subscribe::before {
 	content: "";
 	position: absolute;
-	width: 548px;
+	width: 550px;
 	min-height: 210px;
-	top: 6px;
+	top: 5px;
 	left: 6px;
 
-	border-radius: 15px;
+	border-radius: 14px;
 	background-color: #f8f7f4;
 }
 
@@ -1422,6 +1437,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 	position: relative;
 	padding: 0;
 	margin: 0;
+	margin-bottom: 37px;
 
 	z-index: 1;
 }
@@ -1435,6 +1451,9 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 .subscribe-form input {
 	padding: 0;
 	margin: 0;
+	width: 352px;
+	height: 42px;
+	margin-right: 8px;
 
 	font: inherit;
 
@@ -1444,7 +1463,11 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 .button-subscribe {
 /*	width: 128px;
 height: 43px;*/
+font: inherit;
+font-size: 18px;
+font-weight: bold;
 padding: 10px 18px;
+margin-bottom: 5px;
 }
 
 .address-area {
@@ -1489,10 +1512,11 @@ padding: 10px 18px;
 
 .feedback {
 	position: absolute;
-	top: 0;
-	right: 0;
-	width: 302px;
-	min-height: 305px;
+	top: 62px;
+	right: 27px;
+	width: 252px;
+	min-height: 247px;
+	padding: 29px 25px;
 
 	border-radius: 10px;
 	background-color: #fdfefe;
@@ -1512,6 +1536,7 @@ address.feedback-info {
 }
 
 a.feedback-info {
+	display: block;
 	padding: 0;
 	margin: 0;
 
@@ -1541,7 +1566,8 @@ a.feedback-info:active {
 .button-feedback {
 /*	width: 251px;
 height: 43px;*/
-padding: 0px 27px;
+	padding: 0px 27px;
+	margin-top: 24px;
 
 line-height: 43px;
 }
@@ -1868,7 +1894,17 @@ height: 43px;*/
 padding: 9px 23px;
 }
 
-.subscribe-form input,
+.subscribe-form input {
+	padding-left: 14px;
+
+	font: inherit;
+
+	border: 1px solid #b2b2b2;
+	border-radius: 5px;
+	background-color: #ffffff;
+}
+
+
 .modal input,
 .modal textarea {
 	height: 42px;
