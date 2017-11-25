@@ -35,7 +35,7 @@
                         <li><a class="navigation-list-item" href="#">О компании</a></li>
                     </ul>
                     <div class="main-searching">
-                        <a href="#" class="button-head button-searching"></a>
+                        <a href="#" class="button-head button-searching" aria-label="Поиск по сайту"></a>
                     </div>
                     <ul class="navigation-user">
                         <li><a href="#" class="button-head button-login">Вход</a></li>
@@ -212,10 +212,10 @@
             <div class="container-wrapper">
                 <footer class="main-footer">
                     <ul class="main-footer-social">
-                        <li><a class="button-social twitter" href="#" aria-label="Твиттер">Твиттер</a></li>
-                        <li><a class="button-social instagramm" aria-label="Инстаграмм" href="#">Инстаграмм</a></li>
-                        <li><a class="button-social facebook" aria-label="Фейсбук" href="#">Фейсбук</a></li>
-                        <li><a class="button-social vk" aria-label="Вконтакте" href="#">Вконтакте</a></li>
+                        <li><a class="button-social twitter" href="#" aria-label="Твиттер"><span class="visually-hidden">Твиттер</span></a></li>
+                        <li><a class="button-social instagramm" aria-label="Инстаграмм" href="#"><span class="visually-hidden">Инстаграмм</span></a></li>
+                        <li><a class="button-social facebook" aria-label="Фейсбук" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+                        <li><a class="button-social vk" aria-label="Вконтакте" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
                     </ul>
 
                     <nav class="main-footer-navigation">
@@ -248,6 +248,7 @@
                         <label class="visually-hidden" for="modal-password-field">Пароль</label>
                         <input type="password" id="modal-password-field" placeholder="Пароль">
                     </p>
+                    <div>
                     <p>
                         <button class="button" type="submit">Войти</button>
                     </p>
@@ -255,6 +256,7 @@
                         <a href="#" class="modal-login-link">Забыли пароль?</a>
                         <a  href="#" class="modal-login-link">Новая регистрация</a>
                     </p>
+                    </div>
                 </form>
             </section>
 
