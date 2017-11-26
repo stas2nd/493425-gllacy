@@ -194,7 +194,7 @@ li .navigation-list-item:active {
 }
 
 .navigation-list-sub-menu {
-	visibility: hidden;
+	display: none;
 	position: absolute;
 	/*	margin-top: 6px;*/
 	margin-left: -7px;
@@ -229,7 +229,7 @@ li .navigation-list-item:active {
 }
 
 .navigation-menu-link {
-/*	visibility: hidden;*/
+	/*	visibility: hidden;*/
 	display: block;
 	width: 123px;
 	padding-left: 20px;
@@ -246,17 +246,9 @@ li:hover .navigation-list-sub-menu,
 li:focus .navigation-list-sub-menu,
 .navigation-list-item:hover + .navigation-list-sub-menu,
 .navigation-list-item:focus + .navigation-list-sub-menu {
-	visibility: visible;
+	display: block;
 	color: #323232;
 }
-
-li:hover .navigation-list-sub-menu a,
-li:focus .navigation-list-sub-menu a,
-.navigation-list-item:hover a,
-.navigation-list-item:focus a {
-	visibility: visible;
-}
-
 
 .sub-sub-menu-item {
 	width: 123px;
@@ -1261,7 +1253,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 
 .features {
 	width: 1092px;
-/*	min-height: 265px;*/
+	/*	min-height: 265px;*/
 	padding: 26px 20px;
 	padding-right: 34px;
 	padding-bottom: 20px;
@@ -1580,10 +1572,10 @@ a.feedback-info:active {
 .button-feedback {
 /*	width: 251px;
 height: 43px;*/
-	padding: 0px 27px;
-	margin-top: 24px;
+padding: 0px 27px;
+margin-top: 24px;
 
-	line-height: 43px;
+line-height: 43px;
 }
 
 .pagination-list {
@@ -1630,7 +1622,7 @@ height: 43px;*/
 }
 
 /*.page-forward svg {
-	margin-right: -12px;
+margin-right: -12px;
 }*/
 
 .page-back path {
@@ -1847,13 +1839,13 @@ a.modal-login-link:active {
 
 .modal-login {
 /*	width: 277px;
-	min-height: 214px;*/
-	width: 241px;
-	min-height: 174px;
-	padding: 20px 19px;
-	padding-right: 17px;
+min-height: 214px;*/
+width: 241px;
+min-height: 174px;
+padding: 20px 19px;
+padding-right: 17px;
 
-	border-radius: 5px;
+border-radius: 5px;
 }
 
 .modal form,
@@ -1878,25 +1870,25 @@ padding: 10px 25px;
 
 .modal-searching {
 /*	width: 341px;
-	min-height: 84px;*/
-	width: 311px;
-	min-height: 44px;
-	padding: 20px 15px;
+min-height: 84px;*/
+width: 311px;
+min-height: 44px;
+padding: 20px 15px;
 
-	border-radius: 5px;
+border-radius: 5px;
 }
 
 .modal-feedback {
 /*	width: 477px;
-	min-height: 442px;*/
-	width: 428px;
-	min-height: 397px;
-	padding-top: 18px;
-	padding-left: 24px;
-	padding-right: 25px;
-	padding-bottom: 27px;
+min-height: 442px;*/
+width: 428px;
+min-height: 397px;
+padding-top: 18px;
+padding-left: 24px;
+padding-right: 25px;
+padding-bottom: 27px;
 
-	border-radius: 7px;	
+border-radius: 7px;	
 }
 
 .modal-feedback-greeting {
