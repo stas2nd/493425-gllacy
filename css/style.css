@@ -132,7 +132,7 @@ a:active:not(.button) {
 
 .navigation-list > li {
 	height: 32px;
-	margin-right: 4px;
+	margin-right: 3px;
 	align-self: flex-end;
 
 	vertical-align: middle;
@@ -363,7 +363,7 @@ li:focus .navigation-list-sub-menu,
 
 	background-image: url("../img/enter.svg");
 	background-repeat: no-repeat;
-	background-position: 20%;
+	background-position: 20px;
 }
 
 a.button-login:hover {
@@ -374,7 +374,7 @@ a.button-login:hover {
 	background-color: #f8f7f4;
 	background-image: url("../img/enter-inv.png");
 	background-repeat: no-repeat;
-	background-position: 20%;
+	background-position: 20px;
 }
 
 .button-cart {
@@ -384,7 +384,7 @@ a.button-login:hover {
 
 	background-image: url("../img/cart.svg");
 	background-repeat: no-repeat;
-	background-position: 15%;	
+	background-position: 15px;	
 }
 
 a.button-cart:hover {
@@ -396,19 +396,19 @@ a.button-cart:hover {
 	background-color: #f8f7f4;
 	background-image: url("../img/cart-inv.png");
 	background-repeat: no-repeat;
-	background-position: 15%;
+	background-position: 15px;
 }
 
 .button-cart-full {
 	background-image: url("../img/cart-full.png");
 	background-repeat: no-repeat;
-	background-position: 15%;
+	background-position: 15px;
 }
 
 .button-cart-full:hover {
 	background-image: url("../img/cart-full.png");
 	background-repeat: no-repeat;
-	background-position: 15%;
+	background-position: 15px;
 }
 
 .header-schedule-phone {
@@ -909,7 +909,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 
 .promo-slider {
 	position: relative;
-	padding-top: 243px;
+	padding-top: 230px;
 }
 
 .promo-switch {
@@ -1035,7 +1035,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 	width: 520px;
 	min-height: 195px;
 
-	border-radius: 10px;
+	border-radius: 12px;
 }
 
 .banner:first-child {
@@ -1071,7 +1071,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 .button-banner {
 	position: absolute;
 	right: 20px;
-	bottom: 22px;
+	bottom: 24px;
 	/*	width: 165px;*/
 	min-height: 44px;
 	padding: 0 22px;
@@ -1089,7 +1089,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 }
 
 .catalog-items.index {
-	margin-bottom: 36px;	
+	margin-bottom: 33px;	
 }
 
 .catalog-items-list {
@@ -1524,7 +1524,7 @@ margin-bottom: 5px;
 	padding: 0;
 	margin: 0;
 
-	line-height: 20px;
+	line-height: 18px;
 }
 
 address.feedback-info {
@@ -1755,11 +1755,11 @@ margin-right: -12px;
 }
 
 .main-footer-navigation-list:first-child {
-	padding-left: 15px;
+	padding-left: 16px;
 }
 
 .main-footer-navigation-list:last-child {
-	padding-left: 30px;
+	padding-left: 31px;
 }
 
 .main-footer-navigation-list {
@@ -1769,10 +1769,6 @@ margin-right: -12px;
 	list-style: none;
 	font-size: 13px;
 	line-height: 18px;
-}
-
-.main-footer-navigation-list li:first-child {
-	margin-bottom: 5px;
 }
 
 .main-footer-navigation-list li {
@@ -1849,7 +1845,7 @@ border-radius: 5px;
 }
 
 .modal form,
-.modal form p {
+.modal p {
 	padding: 0;
 	margin: 0;
 }
@@ -1881,14 +1877,16 @@ border-radius: 5px;
 .modal-feedback {
 /*	width: 477px;
 min-height: 442px;*/
+position: relative;
+
 width: 428px;
-min-height: 397px;
-padding-top: 18px;
+min-height: 395px;
+padding-top: 16px;
 padding-left: 24px;
 padding-right: 25px;
-padding-bottom: 27px;
+padding-bottom: 29px;
 
-border-radius: 7px;	
+border-radius: 9px;	
 }
 
 .modal-feedback-greeting {
@@ -1965,6 +1963,14 @@ padding: 9px 23px;
 	height: 42px;
 }
 
+.modal-feedback-form > p {
+	margin-bottom: 20px;
+}
+
+.modal-feedback-form p:nth-child(4) {
+	margin-bottom: 18px;
+}
+
 .subscribe-form input:hover,
 .modal input:hover,
 .modal textarea:hover {
@@ -2026,6 +2032,10 @@ padding: 9px 23px;
 	padding-top: 9px;
 }
 
+.modal-feedback-form button {
+	margin-left: 290px;
+}
+
 .subscribe-form input:focus::-webkit-input-placeholder {
 	color: transparent;
 }
@@ -2076,11 +2086,13 @@ padding: 9px 23px;
 	height: 17px;
 	padding: 0;
 	margin: 0;
+	top: 15px;
+	right: 17px;
 
 	font-size: 0;
-
+/*
 	background-image: url("../img/x-big.png");
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;*/
 }
 
 
@@ -2120,12 +2132,43 @@ padding: 9px 23px;
 }
 
 .button-x {
-	padding: 0;
+	position: absolute;
 	margin: 0;
 
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
+}
+
+.button-x::before {
+	position: absolute;
+	content: "";
+	bottom: 0;
+	left: 0;
+
+	border-left: 2px solid black;
+
+	transform-origin: left bottom;
+	transform: rotate(45deg);
+
+}
+
+.button-x::after {
+	position: absolute;
+	content: "";
+	top: -24px;
+	bottom: 0;
+	left: 1px;
+
+	border-left: 2px solid black;
+
+	transform-origin: left bottom;
+	transform: rotate(135deg);
+}
+
+.modal-close::after,
+.modal-close::before {
+	height: 24px;
 }
 
 .button-cart-delete {
