@@ -132,7 +132,7 @@ a:active:not(.button) {
 
 .navigation-list > li {
 	height: 32px;
-	margin-right: 3px;
+	margin-right: 2px;
 	align-self: flex-end;
 
 	vertical-align: middle;
@@ -363,7 +363,7 @@ li:focus .navigation-list-sub-menu,
 
 	background-image: url("../img/enter.svg");
 	background-repeat: no-repeat;
-	background-position: 20px;
+	background-position: 17px;
 }
 
 a.button-login:hover {
@@ -374,7 +374,7 @@ a.button-login:hover {
 	background-color: #f8f7f4;
 	background-image: url("../img/enter-inv.png");
 	background-repeat: no-repeat;
-	background-position: 20px;
+	background-position: 17px;
 }
 
 .button-cart {
@@ -384,7 +384,7 @@ a.button-login:hover {
 
 	background-image: url("../img/cart.svg");
 	background-repeat: no-repeat;
-	background-position: 15px;	
+	background-position: 16px;	
 }
 
 a.button-cart:hover {
@@ -396,19 +396,19 @@ a.button-cart:hover {
 	background-color: #f8f7f4;
 	background-image: url("../img/cart-inv.png");
 	background-repeat: no-repeat;
-	background-position: 15px;
+	background-position: 16px;
 }
 
 .button-cart-full {
 	background-image: url("../img/cart-full.png");
 	background-repeat: no-repeat;
-	background-position: 15px;
+	background-position: 16px;
 }
 
 .button-cart-full:hover {
 	background-image: url("../img/cart-full.png");
 	background-repeat: no-repeat;
-	background-position: 15px;
+	background-position: 16px;
 }
 
 .header-schedule-phone {
@@ -427,10 +427,12 @@ a.button-cart:hover {
 .header-schedule {
 	padding: 0;
 	margin: 0;
-	margin-bottom: 8px;
+	margin-bottom: 5px;
 
 	font-size: 14px;
 	line-height: 16px;
+	text-align: right;
+	font-weight: bold;
 }
 
 .header-phone {
@@ -864,7 +866,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 .site-wrapper {
 	min-width: 1200px;
 	padding-top: 10px;
-	padding-bottom: 23px;
+	padding-bottom: 25px;
 
 	background-color: #849d8f;
 }
