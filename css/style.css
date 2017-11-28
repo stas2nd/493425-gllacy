@@ -205,6 +205,7 @@ li .navigation-list-item:active {
 	color: #323232;
 
 	border-top: 6px solid transparent;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 
 	z-index: 3;
 }
@@ -1136,7 +1137,8 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 	height: 405px;
 
 	background-color: rgba(255, 255, 255, 0.2);	
-	border-radius: 3px;
+	border-radius: 5px;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 
 	z-index: 1;
 }
@@ -1299,7 +1301,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 	margin-bottom: 4px;
 }
 
-.feature-item:nth-child(2n+1) {
+.feature-item {
 	width: 540px;
 }
 
@@ -1819,6 +1821,15 @@ a.heart {
 	margin: 0;
 }
 
+.modal {
+	display: none;
+	position: absolute;
+
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+
+	z-index: 4;
+}
+
 .modal,
 .modal a {
 	padding: 0;
@@ -1840,12 +1851,14 @@ a.modal-login-link:active {
 .modal-login {
 /*	width: 277px;
 min-height: 214px;*/
-width: 241px;
-min-height: 174px;
-padding: 20px 19px;
-padding-right: 17px;
+	width: 241px;
+	min-height: 174px;
+	padding: 20px 19px;
+	padding-right: 17px;
+	top: 150px;
+	right: 100px;
 
-border-radius: 5px;
+	border-radius: 5px;
 }
 
 .modal form,
@@ -1865,32 +1878,35 @@ border-radius: 5px;
 .modal-login .button {
 /*	width: 100px;
 height: 44px;*/
-padding: 10px 25px;
+	padding: 10px 25px;
 }
 
 .modal-searching {
 /*	width: 341px;
 min-height: 84px;*/
-width: 311px;
-min-height: 44px;
-padding: 20px 15px;
+	width: 311px;
+	min-height: 44px;
+	padding: 20px 15px;
+	top: 50px;
+	right: 200px;
 
-border-radius: 5px;
+	border-radius: 5px;
 }
 
 .modal-feedback {
 /*	width: 477px;
 min-height: 442px;*/
-position: relative;
+	top: 50%;
+	left: 50%;
+	margin-left: -238.5px;
+	width: 428px;
+	min-height: 395px;
+	padding-top: 16px;
+	padding-left: 24px;
+	padding-right: 25px;
+	padding-bottom: 29px;
 
-width: 428px;
-min-height: 395px;
-padding-top: 16px;
-padding-left: 24px;
-padding-right: 25px;
-padding-bottom: 29px;
-
-border-radius: 9px;	
+	border-radius: 9px;	
 }
 
 .modal-feedback-greeting {
@@ -1905,7 +1921,7 @@ border-radius: 9px;
 .modal-feedback .button {
 /*	width: 138px;
 height: 43px;*/
-padding: 9px 23px;
+	padding: 9px 23px;
 }
 
 .subscribe-form input {
@@ -2101,9 +2117,12 @@ background-repeat: no-repeat;*/
 
 .modal-cart {
 	display: flex;
+	display: none;
 	flex-direction: column;
 	width: 510px;
 	min-height: 202px;
+	top: 380px;
+	right: 200px;
 
 	font-size: 13px;
 	line-height: 16px;
