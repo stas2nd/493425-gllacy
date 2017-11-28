@@ -415,6 +415,7 @@ a.button-cart:hover {
 	padding: 0;
 	margin: 0;
 	float: right;
+	text-align: right;
 }
 
 
@@ -442,6 +443,7 @@ a.button-cart:hover {
 	font-size: 22px;
 	line-height: 24px;
 	font-weight: bold;
+	text-align: right;
 	text-decoration: none;
 }
 
@@ -911,13 +913,13 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 
 .promo-slider {
 	position: relative;
-	padding-top: 230px;
+	padding-top: 247px;
 }
 
 .promo-switch {
 	display: flex;
 	position: absolute;
-	bottom: 10px;
+	bottom: 20px;
 	left: 0;
 	padding: 0;
 	margin: 0;
@@ -939,9 +941,9 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 	vertical-align: top;
 	padding: 0;
 	margin: 0;
-	width: 17px;
-	height: 17px;
-	margin-right: 7px;
+	width: 16px;
+	height: 16px;
+	margin-right: 8px;
 
 	font-size: 0;
 
@@ -994,7 +996,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 	width: 700px;
 	padding: 0;
 	margin: 0 auto;
-	margin-bottom: 41px;
+	margin-bottom: 31px;
 
 	font-size: 60px;
 	line-height: 60.35px;
@@ -1016,7 +1018,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 }
 
 .banners-area {
-	margin-top: 50px;
+	margin-top: 41px;
 }
 
 
@@ -2093,8 +2095,8 @@ padding: 9px 23px;
 
 	font-size: 0;
 /*
-	background-image: url("../img/x-big.png");
-	background-repeat: no-repeat;*/
+background-image: url("../img/x-big.png");
+background-repeat: no-repeat;*/
 }
 
 .modal-cart {
@@ -2207,7 +2209,7 @@ padding: 9px 23px;
 
 tr.modal-cart-total {
 	display: flex;
-/*	min-height: 35px;*/
+	/*	min-height: 35px;*/
 	width: 100%;
 	padding-top: 14px;
 	margin: 0px;
@@ -2282,8 +2284,8 @@ tr.modal-cart-total {
 	width: 11px;
 	height: 11px;
 /*
-	background-image: url("../img/x-small.png");
-	background-repeat: no-repeat;*/
+background-image: url("../img/x-small.png");
+background-repeat: no-repeat;*/
 }
 
 .button-cart-delete::after,
