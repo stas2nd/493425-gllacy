@@ -313,6 +313,7 @@ li:focus .navigation-list-sub-menu,
 	display: block;
 	padding: 0;
 	margin: 0;
+	margin-bottom: 4px;
 
 	color: #ffffff;
 	text-decoration: none;
@@ -1080,8 +1081,8 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 
 .button-banner {
 	position: absolute;
-	right: 20px;
-	bottom: 24px;
+	right: 22px;
+	bottom: 23px;
 	/*	width: 165px;*/
 	min-height: 44px;
 	padding: 0 22px;
@@ -1099,6 +1100,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 }
 
 .catalog-items.index {
+	margin-top: 40px;
 	margin-bottom: 38px;	
 }
 
@@ -1457,7 +1459,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 	position: relative;
 	padding: 0;
 	margin: 0;
-	margin-bottom: 40px;
+	margin-bottom: 35px;
 
 	z-index: 1;
 }
@@ -1680,6 +1682,10 @@ margin-right: -12px;
 	color: #323232;
 }
 
+.pagination-item a:active {
+	color: #000000;	
+}
+
 .pagination-item-current {
 	background-color: #ffffff;
 }
@@ -1835,11 +1841,15 @@ a.heart {
 
 .main-footer-copyright a,
 .main-footer-copyright img,
-.main-footer-copyright p{
+.main-footer-copyright p {
 	padding: 0;
 	margin: 0;
 
 	font-weight: normal;
+}
+
+.main-footer-copyright p {
+	margin-top: -2px;
 }
 
 .modal {
