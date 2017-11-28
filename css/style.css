@@ -401,6 +401,9 @@ a.button-cart:hover {
 }
 
 .button-cart-full {
+	color: #323232;
+
+	background-color: #f8f7f4;
 	background-image: url("../img/cart-full.png");
 	background-repeat: no-repeat;
 	background-position: 16px;
@@ -944,7 +947,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 	margin: 0;
 	width: 16px;
 	height: 16px;
-	margin-right: 8px;
+	margin-right: 9px;
 
 	font-size: 0;
 
@@ -1040,7 +1043,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 	width: 520px;
 	min-height: 195px;
 
-	border-radius: 12px;
+	border-radius: 15px;
 }
 
 .banner:first-child {
@@ -1090,11 +1093,11 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 
 .catalog-items {
 	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-bottom: 42px;
 }
 
 .catalog-items.index {
-	margin-bottom: 33px;	
+	margin-bottom: 30px;	
 }
 
 .catalog-items-list {
@@ -1261,6 +1264,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 	width: 1092px;
 	/*	min-height: 265px;*/
 	padding: 26px 20px;
+	padding-right: 18px;
 	padding-right: 34px;
 	padding-bottom: 20px;
 
@@ -1269,7 +1273,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 	background-color: #ece0c5;
 	background-image: url("../img/index/waffle-background.jpg");
 	background-repeat: repeat;
-	border-radius: 14px;
+	border-radius: 15px;
 
 }
 
@@ -1370,8 +1374,8 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 .block {
 	padding: 0;
 	margin: 0;
-	width: 560px;
-	height: 220px;
+/*	width: 560px;
+	height: 220px;*/
 
 	background-color: #ffffff;
 	border-radius: 15px;
@@ -1418,8 +1422,9 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 .subscribe {
 	position: relative;
 	width: 508px;
-	height: 154px;
+	height: 152px;
 	padding: 33px 26px;
+	padding-top: 35px;
 
 	background-image: repeating-linear-gradient(135deg, #ffffff 1px, #ffffff 8px, #b1dafc 8px, #b1dafc 15px, #ffffff 15px, #ffffff 22px, #fcbaaf 22px, #fcbaaf 29px, #ffffff 29px);
 	color: #5a5a5a;
@@ -1589,6 +1594,7 @@ line-height: 43px;
 	justify-content: flex-end;
 	padding: 0;
 	margin: 0;
+	margin-bottom: 33px;
 
 	list-style: none;
 }
