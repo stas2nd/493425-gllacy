@@ -119,6 +119,7 @@ a:active:not(.button) {
 
 .main-navigation {
 	display: flex;
+	flex-wrap: wrap;
 	padding: 0;
 	margin: 0;
 	align-items: center;
@@ -302,11 +303,20 @@ li:focus .navigation-list-sub-menu,
 
 .navigation-user {
 	display: flex;
+	flex-wrap: wrap;
 	padding: 0;
 	margin: 0;
 	margin-left: 10px;
 	width: 219px;
 	justify-content: space-between;
+}
+
+.navigation-user li {
+	margin-right: 10px;
+}
+
+.navigation-user li:last-child {
+	margin-right: 0px;
 }
 
 .button-head {
@@ -359,9 +369,10 @@ li:focus .navigation-list-sub-menu,
 }
 
 .button-login {
-	min-width: 48px;
+	min-width: 38px;
 	min-height: 32px;
 	padding-left: 44px;
+	padding-right: 10px;
 
 	background-image: url("../img/enter.svg");
 	background-repeat: no-repeat;
@@ -380,9 +391,10 @@ a.button-login:hover {
 }
 
 .button-cart {
-	min-width: 72px;
+	min-width: 62px;
 	min-height: 32px;
 	padding-left: 45px;
+	padding-right: 10px;
 
 	background-image: url("../img/cart.svg");
 	background-repeat: no-repeat;
@@ -1214,7 +1226,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 	border-radius: 19px;
 	background-color: transparent;
 
-	z-index: 5;
+	z-index: 6;
 }
 
 .catalog-item-image {
@@ -1401,7 +1413,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 
 .blog-news {
 	width: 520px;
-	height: 197px;
+	min-height: 197px;
 	padding: 0;
 	padding-top: 23px;
 	padding-left: 20px;
@@ -1435,7 +1447,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 .subscribe {
 	position: relative;
 	width: 508px;
-	height: 152px;
+	min-height: 152px;
 	padding: 33px 26px;
 	padding-top: 35px;
 
@@ -1447,7 +1459,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 	content: "";
 	position: absolute;
 	width: 550px;
-	min-height: 210px;
+	min-height: calc(100% - 10px);
 	top: 5px;
 	left: 6px;
 
@@ -1495,16 +1507,17 @@ height: 43px;*/
 .address-area {
 	position: relative;
 	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.address-area-map {
+	width: 100%;
 	height: 430px;
 	padding: 0;
 	margin: 0;
 
 	overflow: hidden;
-}
-
-.address-area-map {
-	padding: 0;
-	margin: 0;
 }
 
 .address-area-map img {
@@ -1715,12 +1728,11 @@ margin-right: -12px;
 
 .main-footer-social {
 	display: flex;
-	width: 185px;
-	height: 38px;
+	min-width: 185px;
+	min-height: 38px;
 	padding: 0;
 	margin: 0;
 	align-items: center;
-	justify-content: space-between;
 
 	list-style: none;
 }
@@ -1729,6 +1741,11 @@ margin-right: -12px;
 	width: 38px;
 	height: 38px;
 	padding-bottom: 13px;
+	margin-right: 11px;
+}
+
+.main-footer-social li:last-child {
+	margin-right: 0px;	
 }
 
 .button-social {
@@ -1780,16 +1797,16 @@ margin-right: -12px;
 
 .main-footer-navigation {
 	display: flex;
-	align-items: flex-end;
-	width: 330px;
-	height: 40px;
+	align-items: center;
+	min-width: 330px;
+	min-height: 40px;
 }
 
 .main-footer-navigation-list:first-child {
 	padding-left: 18px;
 }
 
-.main-footer-navigation-list:last-child {
+.main-footer-navigation-list:not(:first-child) {
 	padding-left: 31px;
 }
 
