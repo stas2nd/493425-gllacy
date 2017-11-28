@@ -508,7 +508,7 @@ a.header-phone:active {
 	display: flex;
 	flex-wrap: wrap;
 	width: 860px;
-	min-height: 133px;
+	min-height: 132px;
 	align-items: stretch;
 	align-content: space-between;
 }
@@ -716,7 +716,7 @@ a.header-phone:active {
 .filter-label-fat::before {
 	content: "";
 	position: absolute;
-	top: 0;
+	top: -2px;
 	left: -31px;
 	width: 16px;
 	height: 16px;
@@ -728,7 +728,7 @@ a.header-phone:active {
 .filter-label-fat::after {
 	content: "";
 	position: absolute;
-	top: 7px;
+	top: 5px;
 	left: -24px;
 
 	border-radius: 50%;
@@ -768,8 +768,8 @@ input[type="radio"]:disabled ~ .filter-label::after {
 .filter-fillers div{
 	padding: 0;
 	margin: 0;
-	padding-left: 30px;
-	margin-right: 22px;
+	padding-left: 31px;
+	margin-right: 21px;
 }
 
 .filter-fillers div:last-child {
@@ -1094,8 +1094,8 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 }
 
 .catalog-items {
-	margin-top: 40px;
-	margin-bottom: 42px;
+	margin-top: 39px;
+	margin-bottom: 43px;
 }
 
 .catalog-items.index {
@@ -1138,7 +1138,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 	top: -5px;
 	left: 0;
 	width: 100%;
-	height: 405px;
+	min-height: 405px;
 
 	background-color: rgba(255, 255, 255, 0.2);	
 	border-radius: 5px;
@@ -1149,6 +1149,12 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 
 .catalog-item:hover::after {
 	display: block;
+
+	z-index: 3;
+}
+
+.catalog-item:hover .catalog-item-image{
+	z-index: 4;
 }
 
 .catalog-item:hover .catalog-item-quick {
@@ -1206,7 +1212,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 	border-radius: 19px;
 	background-color: transparent;
 
-	z-index: 3;
+	z-index: 5;
 }
 
 .catalog-item-image {
@@ -1230,7 +1236,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 	top: 210px;
 	left: 12px;
 
-	z-index: 3;
+	z-index: 5;
 }
 
 .catalog-item-price span {
@@ -1248,7 +1254,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 	left: 50%;
 	margin-left: -128px;
 
-	z-index: 3;
+	z-index: 5;
 }
 
 .catalog-item__hit::before {
@@ -1262,7 +1268,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 	background-image: url("../img/index/hit.png");
 	background-repeat: no-repeat;
 
-	z-index: 3;
+	z-index: 5;
 }
 
 .features {
@@ -1451,7 +1457,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 	position: relative;
 	padding: 0;
 	margin: 0;
-	margin-bottom: 37px;
+	margin-bottom: 40px;
 
 	z-index: 1;
 }
@@ -1774,7 +1780,7 @@ margin-right: -12px;
 }
 
 .main-footer-navigation-list:first-child {
-	padding-left: 16px;
+	padding-left: 18px;
 }
 
 .main-footer-navigation-list:last-child {
@@ -1822,7 +1828,6 @@ a.heart {
 .main-footer-copyright {
 	padding: 0;
 	margin: 0;
-	padding-right: 2px;
 
 	font-size: 12px;
 	line-height: 18px;
