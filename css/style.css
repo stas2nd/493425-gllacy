@@ -1098,7 +1098,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 }
 
 .catalog-items.index {
-	margin-bottom: 30px;	
+	margin-bottom: 35px;	
 }
 
 .catalog-items-list {
