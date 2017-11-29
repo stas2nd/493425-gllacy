@@ -2410,7 +2410,8 @@ tr.modal-cart-total {
 	width: 216px;
 	margin: 0;
 	padding: 0;
-	margin-right: 32px;
+	padding-right: 32px;
+	padding-left: 12px;
 	padding-top: 9px;
 }
 
@@ -2424,13 +2425,12 @@ tr.modal-cart-total {
 
 .modal-cart-item td:nth-child(1) {
 	padding-top: 10px;
+	padding-right: 14px;
 }
 
 .modal-cart-item td:nth-child(2) {
 	width: 33px;
 	height: 33px;
-	margin-left: 14px;
-	margin-right: 12px;
 
 	border-radius: 50%;
 
@@ -2440,13 +2440,13 @@ tr.modal-cart-total {
 .modal-cart-item-amount {
 	margin: 0;
 	padding: 0;
-	margin-right: 3px;
+	padding-right: 3px;
 }
 
 .modal-cart-item-price {
 	margin: 0;
 	padding: 0;
-	margin-right: 27px;
+	padding-right: 27px;
 }
 
 .modal-cart-item-total {
