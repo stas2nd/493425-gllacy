@@ -10,13 +10,37 @@
 </head>
 
 <body>
+    <div class="modal-wrapper">
+        <section class="modal modal-feedback">
+            <div>
+                <h1 class="visually-hidden">Форма обратной связи</h1>
+                <form class="modal-feedback-form" action="https://echo.htmlacademy.ru" method="get">
+                    <p>
+                        <b class="modal-feedback-greeting">Мы обязательно вам ответим!</b>
+                    </p>
+                    <p>
+                        <label class="visually-hidden" for="modal-feedback-field-name">Ваше имя</label>
+                        <input type="text" name="feedbackname" id="modal-feedback-field-name" placeholder="Как вас зовут?">
+                    </p>
+                    <p>
+                        <label class="visually-hidden" for="modal-feedback-field-mail">Ваша почта</label>
+                        <input type="email" name="feedbackmail" id="modal-feedback-field-mail" placeholder="Ваша почта для ответа?">
+                    </p>
+                    <p>
+                        <textarea placeholder="Напишите что-нибудь..." rows="6"></textarea>
+                    </p>
+                    <button type="submit" class="button">Отправить</button>
+                </form>
+                <button class="button-x modal-close">Закрыть</button>
+            </div>
+        </section>
+    </div>
+    
     <input class="visually-hidden" type="radio" id="product-1" name="toggle-promo" checked>
     <input class="visually-hidden" type="radio" id="product-2" name="toggle-promo">
     <input class="visually-hidden" type="radio" id="product-3" name="toggle-promo">
 
     <div class="site-wrapper index">
-
-        <div class="modal-wrapper">
 
             <div class="container">  
                 <header class="main-header index">
@@ -225,6 +249,7 @@
 
 
                 <div class="address-area">
+                    <iframe src="https://yandex.ru/map-widget/v1/-/CBa77IcpGC" width="1200" height="430" frameborder="0"></iframe>
                     <p class="address-area-map">
                         <img src="img/index/map.png" width="1200" height="640" alt="Магазина мороженого «Gllacy Shop» находится по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург">
                     </p>
@@ -272,32 +297,8 @@
                     </div>
                 </footer>
             </div>
-
-            <section class="modal modal-feedback">
-                <div>
-                    <h1 class="visually-hidden">Форма обратной связи</h1>
-                    <form class="modal-feedback-form" action="https://echo.htmlacademy.ru" method="get">
-                        <p>
-                            <b class="modal-feedback-greeting">Мы обязательно вам ответим!</b>
-                        </p>
-                        <p>
-                            <label class="visually-hidden" for="modal-feedback-field-name">Ваше имя</label>
-                            <input type="text" id="modal-feedback-field-name" placeholder="Как вас зовут?">
-                        </p>
-                        <p>
-                            <label class="visually-hidden" for="modal-feedback-field-mail">Ваша почта</label>
-                            <input type="email" id="modal-feedback-field-mail" placeholder="Ваша почта для ответа?">
-                        </p>
-                        <p>
-                            <textarea placeholder="Напишите что-нибудь..." rows="6"></textarea>
-                        </p>
-                        <button type="submit" class="button">Отправить</button>
-                    </form>
-                    <button class="button-x modal-close">Закрыть</button>
-                </div>
-            </section>
         </div>
     </div>
-</div>
+<script src="js/script.js"></script>
 </body>
 </html>
