@@ -1,5 +1,7 @@
 ﻿var link = document.querySelector(".button-feedback");
+var loglink = document.querySelector(".button-login");
 
+var logup = document.querySelector(".modal-login");
 var popup = document.querySelector(".modal-feedback");
 var close = popup.querySelector(".modal-close");
 var overlay = document.querySelector(".modal-wrapper");
@@ -8,11 +10,15 @@ var form = popup.querySelector(".modal-feedback-form");
 var fname = popup.querySelector("[name=feedbackname]");
 var fmail = popup.querySelector("[name=feedbackmail]");
 
+var logform = logup.querySelector(".modal-login-form");
+var lname = logup.querySelector("#modal-login-field");
+var lpas = logup.querySelector("#modal-password-field");
+
 // var storagename = localStorage.getItem("fname");
 
 link.addEventListener("click", function (evt) {
     evt.preventDefault();
-    overlay.classList.add("modal-show");
+    overlay.classList.add("modal-show-back");
     popup.classList.add("modal-show");
     fname.focus();       
 });
@@ -21,7 +27,7 @@ close.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove("modal-show");
     popup.classList.remove("modal-error");
-    overlay.classList.remove("modal-show");
+    overlay.classList.remove("modal-show-back");
 });
 
 form.addEventListener("submit", function (evt) {
@@ -38,12 +44,30 @@ form.addEventListener("submit", function (evt) {
     }
 });
 
+logform.addEventListener("submit", function (evt) {
+    if (!lname.value || !lpas.value) {
+        evt.preventDefault();
+        logup.classList.remove("modal-error");
+        logup.offsetWidth = logup.offsetWidth;
+        logup.classList.add("modal-error");
+        if (!lname.value) {
+            lname.focus();       
+        } else {
+            lmail.focus();
+        }
+    }
+});
+
+loglink.addEventListener("mouseover", function (evt) {
+    logup.classList.remove("modal-error");
+});
+
 window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
         if (popup.classList.contains("modal-show")) {
             popup.classList.remove("modal-show");
             popup.classList.remove("modal-error");
-            overlay.classList.remove("modal-show");
+            overlay.classList.remove("modal-show-back");
         }
     }
   });
@@ -52,5 +76,5 @@ overlay.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove("modal-show");
     popup.classList.remove("modal-error");
-    overlay.classList.remove("modal-show");
+    overlay.classList.remove("modal-show-back");
 });

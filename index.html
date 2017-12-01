@@ -11,31 +11,31 @@
 
 <body>
     <div class="modal-wrapper">
-        <section class="modal modal-feedback">
-            <div>
-                <h1 class="visually-hidden">Форма обратной связи</h1>
-                <form class="modal-feedback-form" action="https://echo.htmlacademy.ru" method="get">
-                    <p>
-                        <b class="modal-feedback-greeting">Мы обязательно вам ответим!</b>
-                    </p>
-                    <p>
-                        <label class="visually-hidden" for="modal-feedback-field-name">Ваше имя</label>
-                        <input type="text" name="feedbackname" id="modal-feedback-field-name" placeholder="Как вас зовут?">
-                    </p>
-                    <p>
-                        <label class="visually-hidden" for="modal-feedback-field-mail">Ваша почта</label>
-                        <input type="email" name="feedbackmail" id="modal-feedback-field-mail" placeholder="Ваша почта для ответа?">
-                    </p>
-                    <p>
-                        <textarea placeholder="Напишите что-нибудь..." rows="6"></textarea>
-                    </p>
-                    <button type="submit" class="button">Отправить</button>
-                </form>
-                <button class="button-x modal-close">Закрыть</button>
-            </div>
-        </section>
     </div>
-    
+    <section class="modal modal-feedback">
+        <div>
+            <h1 class="visually-hidden">Форма обратной связи</h1>
+            <form class="modal-feedback-form" action="https://echo.htmlacademy.ru" method="get">
+                <p>
+                    <b class="modal-feedback-greeting">Мы обязательно вам ответим!</b>
+                </p>
+                <p>
+                    <label class="visually-hidden" for="modal-feedback-field-name">Ваше имя</label>
+                    <input type="text" name="feedbackname" id="modal-feedback-field-name" placeholder="Как вас зовут?">
+                </p>
+                <p>
+                    <label class="visually-hidden" for="modal-feedback-field-mail">Ваша почта</label>
+                    <input type="email" name="feedbackmail" id="modal-feedback-field-mail" placeholder="Ваша почта для ответа?">
+                </p>
+                <p>
+                    <textarea placeholder="Напишите что-нибудь..." rows="6"></textarea>
+                </p>
+                <button type="submit" class="button">Отправить</button>
+            </form>
+            <button class="button-x modal-close">Закрыть</button>
+        </div>
+    </section>
+
     <input class="visually-hidden" type="radio" id="product-1" name="toggle-promo" checked>
     <input class="visually-hidden" type="radio" id="product-2" name="toggle-promo">
     <input class="visually-hidden" type="radio" id="product-3" name="toggle-promo">
