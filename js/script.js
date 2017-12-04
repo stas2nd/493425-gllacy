@@ -18,6 +18,9 @@ var logform = logup.querySelector(".modal-login-form");
 var lname = logup.querySelector("#modal-login-field");
 var lpas = logup.querySelector("#modal-password-field");
 
+var filterarea = document.querySelector(".filter");
+var sliderarea = document.querySelector(".promo-slider");
+
 // var storagename = localStorage.getItem("fname");
 
 if (link) {
@@ -83,6 +86,7 @@ if (popup) {
         }
     });
 }
+
 if (overlay) {
     overlay.addEventListener("click", function (evt) {
         evt.preventDefault();
@@ -90,4 +94,27 @@ if (overlay) {
         popup.classList.remove("modal-error");
         overlay.classList.remove("modal-show-back");
     });
+}
+
+if (filterarea) {
+    window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 32) {
+            if (document.activeElement.classList.contains("filter-label")) {
+                evt.preventDefault();
+                document.activeElement.click();
+            }
+        }
+  });
+}
+
+if (sliderarea) {
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 32) {
+      if (document.activeElement.classList.contains("button-slide")) {
+        evt.preventDefault();
+        document.activeElement.click();
+
+      }
+    }
+  });
 }
