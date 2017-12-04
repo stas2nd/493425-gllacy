@@ -8,7 +8,7 @@ if (document.querySelector(".modal-feedback")) {
 }
 var overlay = document.querySelector(".modal-wrapper");
 
-if (document.querySelector(".modal-feedback")) {
+if (popup) {
     var form = popup.querySelector(".modal-feedback-form");
     var fname = popup.querySelector("[name=feedbackname]");
     var fmail = popup.querySelector("[name=feedbackmail]");
@@ -113,7 +113,6 @@ if (sliderarea) {
       if (document.activeElement.classList.contains("button-slide")) {
         evt.preventDefault();
         document.activeElement.click();
-
       }
     }
   });
