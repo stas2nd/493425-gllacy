@@ -21,8 +21,6 @@ var lpas = logup.querySelector("#modal-password-field");
 var filterarea = document.querySelector(".filter");
 var sliderarea = document.querySelector(".promo-slider");
 
-// var storagename = localStorage.getItem("fname");
-
 if (link) {
     link.addEventListener("click", function (evt) {
         evt.preventDefault();
