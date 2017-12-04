@@ -3,12 +3,16 @@ var loglink = document.querySelector(".button-login");
 
 var logup = document.querySelector(".modal-login");
 var popup = document.querySelector(".modal-feedback");
-var close = popup.querySelector(".modal-close");
+if (document.querySelector(".modal-feedback")) {
+    var buttonclose = popup.querySelector(".modal-close");
+}
 var overlay = document.querySelector(".modal-wrapper");
 
-var form = popup.querySelector(".modal-feedback-form");
-var fname = popup.querySelector("[name=feedbackname]");
-var fmail = popup.querySelector("[name=feedbackmail]");
+if (document.querySelector(".modal-feedback")) {
+    var form = popup.querySelector(".modal-feedback-form");
+    var fname = popup.querySelector("[name=feedbackname]");
+    var fmail = popup.querySelector("[name=feedbackmail]");
+}
 
 var logform = logup.querySelector(".modal-login-form");
 var lname = logup.querySelector("#modal-login-field");
@@ -16,33 +20,39 @@ var lpas = logup.querySelector("#modal-password-field");
 
 // var storagename = localStorage.getItem("fname");
 
-link.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    overlay.classList.add("modal-show-back");
-    popup.classList.add("modal-show");
-    fname.focus();       
-});
-
-close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-    popup.classList.remove("modal-error");
-    overlay.classList.remove("modal-show-back");
-});
-
-form.addEventListener("submit", function (evt) {
-    if (!fname.value || !fmail.value) {
+if (link) {
+    link.addEventListener("click", function (evt) {
         evt.preventDefault();
+        overlay.classList.add("modal-show-back");
+        popup.classList.add("modal-show");
+        fname.focus();
+    });
+}
+
+if (buttonclose) {
+    buttonclose.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
         popup.classList.remove("modal-error");
-        popup.offsetWidth = popup.offsetWidth;
-        popup.classList.add("modal-error");
-        if (!fname.value) {
-            fname.focus();       
-        } else {
-            fmail.focus();
+        overlay.classList.remove("modal-show-back");
+    });
+}
+
+if (form) {
+    form.addEventListener("submit", function (evt) {
+        if (!fname.value || !fmail.value) {
+            evt.preventDefault();
+            popup.classList.remove("modal-error");
+            popup.offsetWidth = popup.offsetWidth;
+            popup.classList.add("modal-error");
+            if (!fname.value) {
+                fname.focus();
+          } else {
+                fmail.focus();
+          }
         }
-    }
-});
+    });
+}
 
 logform.addEventListener("submit", function (evt) {
     if (!lname.value || !lpas.value) {
@@ -51,7 +61,7 @@ logform.addEventListener("submit", function (evt) {
         logup.offsetWidth = logup.offsetWidth;
         logup.classList.add("modal-error");
         if (!lname.value) {
-            lname.focus();       
+            lname.focus();
         } else {
             lmail.focus();
         }
@@ -62,19 +72,22 @@ loglink.addEventListener("mouseover", function (evt) {
     logup.classList.remove("modal-error");
 });
 
-window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-        if (popup.classList.contains("modal-show")) {
-            popup.classList.remove("modal-show");
-            popup.classList.remove("modal-error");
-            overlay.classList.remove("modal-show-back");
+if (popup) {
+    window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+            if (popup.classList.contains("modal-show")) {
+                popup.classList.remove("modal-show");
+                popup.classList.remove("modal-error");
+                overlay.classList.remove("modal-show-back");
+            }
         }
-    }
-  });
-
-overlay.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-    popup.classList.remove("modal-error");
-    overlay.classList.remove("modal-show-back");
-});
+    });
+}
+if (overlay) {
+    overlay.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
+        overlay.classList.remove("modal-show-back");
+    });
+}

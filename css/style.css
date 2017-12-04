@@ -109,11 +109,6 @@ a:active:not(.button) {
 	margin: 0 auto;
 }
 
-.container-wrapper {
-	width: 1146px;
-	padding: 0 27px;
-}
-
 .main-header {
 	width: 1146px;
 	padding: 0 27px;
@@ -171,7 +166,7 @@ a:active:not(.button) {
 	align-self: flex-end;
 
 	vertical-align: middle;
-	border-radius: 20px;	
+	border-radius: 20px;
 }
 
 .navigation-list,
@@ -446,7 +441,7 @@ a.button-login:hover {
 
 	background-image: url("../img/cart.svg");
 	background-repeat: no-repeat;
-	background-position: 16px;	
+	background-position: 16px;
 }
 
 a.button-cart:hover {
@@ -522,6 +517,11 @@ a.header-phone:active {
 	color: #e84d37;
 }
 
+.breadcrumbs {
+  margin-left: 27px;
+  margin-right: 27px;
+}
+
 .breadcrumbs-list {
 	position: relative;
 	padding: 0;
@@ -560,6 +560,8 @@ a.header-phone:active {
 	padding: 0;
 	margin: 0;
 	margin-top: 5px;
+  margin-left: 27px;
+  margin-right: 27px;
 
 	font-size: 35px;
 	line-height: 41px;
@@ -567,6 +569,8 @@ a.header-phone:active {
 
 .filter {
 	margin-top: 26px;
+  margin-left: 27px;
+  margin-right: 27px;
 }
 
 .filter-form {
@@ -599,7 +603,7 @@ a.header-phone:active {
 }
 
 .filter-flexbox:nth-child(3) {
-	margin-right: 0; 
+	margin-right: 0;
 }
 
 .filter-form,
@@ -625,7 +629,7 @@ a.header-phone:active {
 
 	font-size: 16px;
 	line-height: 18px;
-	font-weight: 500;	
+	font-weight: 500;
 }
 
 .filter-form input,
@@ -679,7 +683,7 @@ a.header-phone:active {
 
 	background-image: url("../img/icon-down.svg");
 	background-repeat: no-repeat;
-	background-position: 167px 13px;	
+	background-position: 167px 13px;
 }
 
 .select-wrapper:hover select {
@@ -785,7 +789,7 @@ a.header-phone:active {
 }
 
 .filter-fat div:last-child {
-	margin-right: 0;	
+	margin-right: 0;
 }
 
 .filter-fat input {
@@ -890,7 +894,7 @@ input[type="radio"]:disabled ~ .filter-label::after {
 	left: -30px;
 
 	background-image: url("../img/checkbox-on.png");
-	background-repeat: no-repeat;	
+	background-repeat: no-repeat;
 }
 
 input[type="checkbox"]:checked ~ .filter-label-filler::before {
@@ -901,7 +905,7 @@ input[type="checkbox"]:checked ~ .filter-label-filler::after {
 	display: block;
 }
 
-.filter-label-filler:hover::before {	
+.filter-label-filler:hover::before {
 	background-image: url("../img/checkbox-off-hover.png");
 	background-repeat: no-repeat;
 }
@@ -999,6 +1003,8 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 
 .promo-slider {
 	position: relative;
+  margin-left: 27px;
+  margin-right: 27px;
 	padding-top: 247px;
 }
 
@@ -1021,7 +1027,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 .slide-radio {
 	padding: 0;
 	margin: 0;
-	font-size: 0;	
+	font-size: 0;
 }
 
 .button-slide {
@@ -1108,6 +1114,8 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 
 .banners-area {
 	margin-top: 41px;
+  margin-left: 27px;
+  margin-right: 27px;
 }
 
 
@@ -1188,7 +1196,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 
 .catalog-items.index {
 	margin-top: 40px;
-	margin-bottom: 38px;	
+	margin-bottom: 38px;
 }
 
 .catalog-items-list {
@@ -1234,7 +1242,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 	width: 100%;
 	min-height: 405px;
 
-	background-color: rgba(255, 255, 255, 0.2);	
+	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 5px;
 	-webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
@@ -1369,6 +1377,8 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 
 .features {
 	width: 1094px;
+  margin-left: 27px;
+  margin-right: 27px;
 	padding: 26px 20px;
 	padding-right: 18px;
 	padding-right: 32px;
@@ -1482,6 +1492,8 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
+  margin-left: 27px;
+  margin-right: 27px;
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
@@ -1573,7 +1585,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 .subscribe-form {
 	position: relative;
 
-	z-index: 1;	
+	z-index: 1;
 }
 
 .subscribe-form input {
@@ -1726,6 +1738,8 @@ a.feedback-info:active {
 	justify-content: flex-end;
 	padding: 0;
 	margin: 0;
+  margin-left: 27px;
+  margin-right: 27px;
 	margin-bottom: 31px;
 
 	list-style: none;
@@ -1798,7 +1812,7 @@ a.feedback-info:active {
 }
 
 .pagination-item a:active {
-	color: #000000;	
+	color: #000000;
 }
 
 .pagination-item-current {
@@ -1828,6 +1842,8 @@ a.feedback-info:active {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
+  margin-left: 27px;
+  margin-right: 27px;
 }
 
 .inner-page .main-footer {
@@ -1857,7 +1873,7 @@ a.feedback-info:active {
 }
 
 .main-footer-social li:last-child {
-	margin-right: 0px;	
+	margin-right: 0px;
 }
 
 .button-social {
@@ -2029,7 +2045,7 @@ a.heart {
 }
 
 .modal-show-back {
-  	display: block;	
+  	display: block;
 }
 
 .modal-show {
@@ -2136,7 +2152,7 @@ a.modal-login-link:active {
 	padding-right: 25px;
 	padding-bottom: 29px;
 
-	border-radius: 9px;		
+	border-radius: 9px;
 }
 
 .modal-feedback-greeting {
@@ -2382,7 +2398,7 @@ a.modal-login-link:active {
 .modal-cart-total,
 .cart-button {
 	padding: 0;
-	margin: 0;	
+	margin: 0;
 }
 
 .modal-cart-item-price {
@@ -2415,7 +2431,7 @@ a.modal-login-link:active {
 .button-x::before {
 	-webkit-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);	
+	transform: rotate(45deg);
 }
 
 .button-x::after {
@@ -2475,7 +2491,7 @@ tr.modal-cart-total {
 	-ms-flex-pack: end;
 	justify-content: flex-end;
 
-	border-top: 1px solid #cacac7;	
+	border-top: 1px solid #cacac7;
 }
 
 .modal-cart-item-description {
