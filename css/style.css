@@ -1615,6 +1615,8 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
     top: 0;
     left: 0;
 
+    border: none;
+
     z-index: 1;
 }
 
