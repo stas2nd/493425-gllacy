@@ -2630,9 +2630,10 @@ tr.modal-cart-total {
     background-color: black;
 }
 
-.cart-button .button {
-
+.cart-button a {
     padding: 10px 15px;
+
+    color: #ffffff;
 }
 
 .visually-hidden:not(:focus):not(:active),
