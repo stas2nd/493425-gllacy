@@ -115,3 +115,12 @@ if (sliderarea) {
     }
   });
 }
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 13) {
+      if (document.activeElement.classList.contains("button")) {
+        evt.preventDefault();
+        document.activeElement.click();
+      }
+    }
+  });

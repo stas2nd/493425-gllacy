@@ -69,7 +69,8 @@ button {
     border-radius: inherit;
 }
 
-.button:hover::after {
+.button:hover::after,
+.button:focus::after{
     background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -370,7 +371,8 @@ li:focus .navigation-list-sub-menu,
     fill: #ffffff;
 }
 
-.button-head:hover {
+.button-head:hover,
+.button-head:focus{
     color: #323232;
 }
 
@@ -390,7 +392,8 @@ li:focus .navigation-list-sub-menu,
     background-position: 50%;
 }
 
-.button-searching:hover {
+.button-searching:hover,
+.button-searching:focus {
     color: #323232;
 
     background-color: #f8f7f4;
@@ -414,11 +417,13 @@ li:focus .navigation-list-sub-menu,
     background-position: 17px;
 }
 
-a.button-login:hover {
+a.button-login:hover,
+a.button-login:focus{
     color: #323232;
 }
 
-.button-login:hover {
+.button-login:hover,
+.button-login:focus {
     background-color: #f8f7f4;
     background-image: url("../img/enter-inv.png");
     background-repeat: no-repeat;
@@ -440,11 +445,13 @@ a.button-login:hover {
     background-position: 16px;
 }
 
-a.button-cart:hover {
+a.button-cart:hover,
+a.button-cart:focus {
     color: #323232;
 }
 
-.button-cart:hover {
+.button-cart:hover,
+.button-cart:focus {
     background-color: #f8f7f4;
     background-image: url("../img/cart-inv.png");
     background-repeat: no-repeat;
@@ -464,7 +471,8 @@ a.button-cart:hover {
     background-position: 16px;
 }
 
-.button-cart-full:hover {
+.button-cart-full:hover,
+.button-cart-full:focus {
     background-image: url("../img/cart-full.png");
     background-repeat: no-repeat;
     background-position: 16px;
