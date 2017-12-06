@@ -682,7 +682,7 @@ a.header-phone:active {
 }
 
 .filter-form select::-ms-expand {
-  display: none;
+    display: none;
 }
 
 .select-wrapper:hover {
@@ -1214,6 +1214,9 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     padding: 0;
     margin: 0;
 
@@ -1443,7 +1446,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
 }
 
 .feature-item:nth-child(2n) {
-  padding-left: 59px;
+    padding-left: 59px;
 }
 
 .feature-item::before {
@@ -1908,7 +1911,7 @@ a.button-social {
 }
 
 .main-footer-social li:hover {
-  border-color: rgba(255, 255, 255, 0.7);
+    border-color: rgba(255, 255, 255, 0.7);
 }
 
 .button-social:active {
@@ -2021,7 +2024,7 @@ a.heart {
     0%,
     100% {
         -webkit-transform: translateX(0);
-                transform: translateX(0);
+        transform: translateX(0);
     }
 
     10%,
@@ -2030,7 +2033,7 @@ a.heart {
     70%,
     90% {
         -webkit-transform: translateX(-10px);
-                transform: translateX(-10px);
+        transform: translateX(-10px);
     }
 
     20%,
@@ -2038,7 +2041,7 @@ a.heart {
     60%,
     80% {
         -webkit-transform: translateX(10px);
-                transform: translateX(10px);
+        transform: translateX(10px);
     }
 }
 
@@ -2046,7 +2049,7 @@ a.heart {
     0%,
     100% {
         -webkit-transform: translateX(0);
-                transform: translateX(0);
+        transform: translateX(0);
     }
 
     10%,
@@ -2055,7 +2058,7 @@ a.heart {
     70%,
     90% {
         -webkit-transform: translateX(-10px);
-                transform: translateX(-10px);
+        transform: translateX(-10px);
     }
 
     20%,
@@ -2063,33 +2066,33 @@ a.heart {
     60%,
     80% {
         -webkit-transform: translateX(10px);
-                transform: translateX(10px);
+        transform: translateX(10px);
     }
 }
 
 @-webkit-keyframes uprise {
     0% {
         -webkit-transform: scale(0.5);
-                transform: scale(0.5);
+        transform: scale(0.5);
         opacity: 0;
     }
     100% {
         opacity: 1;
         -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
     }
 }
 
 @keyframes uprise {
     0% {
         -webkit-transform: scale(0.5);
-                transform: scale(0.5);
+        transform: scale(0.5);
         opacity: 0;
     }
     100% {
         opacity: 1;
         -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
     }
 }
 
@@ -2112,12 +2115,12 @@ a.heart {
 
     -webkit-animation: uprise 0.6s;
 
-            animation: uprise 0.6s;
+    animation: uprise 0.6s;
 }
 
 .modal-error {
     -webkit-animation: shake 0.6s;
-            animation: shake 0.6s;
+    animation: shake 0.6s;
 }
 
 .modal > div,
