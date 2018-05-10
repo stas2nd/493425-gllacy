@@ -1683,7 +1683,7 @@ input[type="checkbox"]:disabled ~ .filter-label::after {
     border-radius: 15px;
     background-color: #fdfefe;
 
-    z-index: 2;
+    z-index: 5;
 }
 
 .feedback-title {
